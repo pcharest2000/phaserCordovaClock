@@ -1,0 +1,19 @@
+[15:2:55.366] Global cache location '/home/phil/.cache/typescript/3.9', safe file path '/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/typingSafeList.json', types map path /home/phil/code/phaserCordovaClock/node_modules/typescript/lib/typesMap.json
+[15:2:55.367] Processing cache location '/home/phil/.cache/typescript/3.9'
+[15:2:55.368] Trying to find '/home/phil/.cache/typescript/3.9/package.json'...
+[15:2:55.377] Loaded content of '/home/phil/.cache/typescript/3.9/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.504"}}
+[15:2:55.377] Loaded content of '/home/phil/.cache/typescript/3.9/package-lock.json'
+[15:2:55.378] Finished processing cache location '/home/phil/.cache/typescript/3.9'
+[15:2:55.378] Process id: 35173
+[15:2:55.378] NPM location: /usr/local/bin/npm (explicit '--npmLocation' not  provided)
+[15:2:55.378] validateDefaultNpmLocation: false
+[15:2:55.379] Npm config file: /home/phil/.cache/typescript/3.9/package.json
+[15:2:55.379] Updating types-registry npm package...
+[15:2:55.379] Exec: /usr/local/bin/npm install --ignore-scripts types-registry@latest
+[15:2:58.86]     Succeeded. stdout:
+    + types-registry@0.1.504
+    updated 1 package and audited 1 package in 1.31s
+found 0 vulnerabilities
+
+
+[15:2:58.86] Updated types-registry npm package

@@ -1,0 +1,759 @@
+Info 0    [15:2:54.733] Starting TS Server
+Info 1    [15:2:54.734] Version: 3.9.5
+Info 2    [15:2:54.734] Arguments: /usr/local/bin/node /home/phil/code/phaserCordovaClock/node_modules/.bin/tsserver --logFile /home/phil/code/phaserCordovaClock/.log/tsserver.log --logVerbosity info --cancellationPipeName /tmp/06a24a1ee7a71c03ee0cd84a58194493/tscancellation*
+Info 3    [15:2:54.734] Platform: linux NodeVersion: 12 CaseSensitive: true
+Info 4    [15:2:54.771] Search path: /home/phil/code/phaserCordovaClock/src/scenes
+Info 5    [15:2:54.774] For info: /home/phil/code/phaserCordovaClock/src/scenes/clockFadeScene.ts :: Config file name: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 6    [15:2:54.775] Opened configuration file /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 7    [15:2:55.303] Config: /home/phil/code/phaserCordovaClock/tsconfig.json : {
+ "rootNames": [
+  "/home/phil/code/phaserCordovaClock/node_modules/cordova-plugin-dialogs/types/index.d.ts",
+  "/home/phil/code/phaserCordovaClock/node_modules/cordova-plugin-globalization/types/index.d.ts",
+  "/home/phil/code/phaserCordovaClock/node_modules/cordova-plugin-statusbar/types/index.d.ts",
+  "/home/phil/code/phaserCordovaClock/src/app.ts",
+  "/home/phil/code/phaserCordovaClock/src/assets.ts",
+  "/home/phil/code/phaserCordovaClock/src/device.ts",
+  "/home/phil/code/phaserCordovaClock/src/globals.d.ts",
+  "/home/phil/code/phaserCordovaClock/src/index.ts",
+  "/home/phil/code/phaserCordovaClock/src/logger.ts",
+  "/home/phil/code/phaserCordovaClock/src/objects/fonts.ts",
+  "/home/phil/code/phaserCordovaClock/src/objects/fpsText.ts",
+  "/home/phil/code/phaserCordovaClock/src/objects/matrix.ts",
+  "/home/phil/code/phaserCordovaClock/src/objects/myTime.ts",
+  "/home/phil/code/phaserCordovaClock/src/objects/phaserLogo.ts",
+  "/home/phil/code/phaserCordovaClock/src/objects/tweenGroup.ts",
+  "/home/phil/code/phaserCordovaClock/src/objects/tweenGroupSequence.ts",
+  "/home/phil/code/phaserCordovaClock/src/pixelui/ComponentBase.ts",
+  "/home/phil/code/phaserCordovaClock/src/pixelui/Theme.ts",
+  "/home/phil/code/phaserCordovaClock/src/pixelui/Types.ts",
+  "/home/phil/code/phaserCordovaClock/src/pixelui/index.ts",
+  "/home/phil/code/phaserCordovaClock/src/pixelui/component/Backdrop.ts",
+  "/home/phil/code/phaserCordovaClock/src/pixelui/component/Background.ts",
+  "/home/phil/code/phaserCordovaClock/src/pixelui/component/Button.ts",
+  "/home/phil/code/phaserCordovaClock/src/pixelui/component/DebugInfo.ts",
+  "/home/phil/code/phaserCordovaClock/src/pixelui/component/Dialog.ts",
+  "/home/phil/code/phaserCordovaClock/src/pixelui/component/LoadingProgress.ts",
+  "/home/phil/code/phaserCordovaClock/src/pixelui/component/TextLabel.ts",
+  "/home/phil/code/phaserCordovaClock/src/pixelui/component/Toast.ts",
+  "/home/phil/code/phaserCordovaClock/src/pixelui/component/ToggleButton.ts",
+  "/home/phil/code/phaserCordovaClock/src/scenes/BootScene.ts",
+  "/home/phil/code/phaserCordovaClock/src/scenes/PreloadScene.ts",
+  "/home/phil/code/phaserCordovaClock/src/scenes/TitleScene.ts",
+  "/home/phil/code/phaserCordovaClock/src/scenes/clockFadeScene.ts",
+  "/home/phil/code/phaserCordovaClock/src/utils/AdBanner.ts",
+  "/home/phil/code/phaserCordovaClock/src/utils/AdInterstitial.ts",
+  "/home/phil/code/phaserCordovaClock/src/utils/AssetLoader.ts",
+  "/home/phil/code/phaserCordovaClock/src/utils/BgmPlayer.ts",
+  "/home/phil/code/phaserCordovaClock/src/utils/GameService.ts",
+  "/home/phil/code/phaserCordovaClock/src/utils/LocalStorage.ts",
+  "/home/phil/code/phaserCordovaClock/src/utils/Tracking.ts",
+  "/home/phil/code/phaserCordovaClock/types/cordova/index.d.ts",
+  "/home/phil/code/phaserCordovaClock/types/cordova-plugin-appversion/appversion.d.ts",
+  "/home/phil/code/phaserCordovaClock/types/cordova-plugin-native-spinner/spinner.d.ts",
+  "/home/phil/code/phaserCordovaClock/types/lycwed-cordova-plugin-admob-free/AdMob.d.ts",
+  "/home/phil/code/phaserCordovaClock/types/lycwed-cordova-plugin-games-services/GamesServices.d.ts",
+  "/home/phil/code/phaserCordovaClock/test/test.spec.ts",
+  "/home/phil/code/phaserCordovaClock/plugins/cordova-plugin-dialogs/types/index.d.ts",
+  "/home/phil/code/phaserCordovaClock/plugins/cordova-plugin-globalization/types/index.d.ts",
+  "/home/phil/code/phaserCordovaClock/plugins/cordova-plugin-splashscreen/types/index.d.ts",
+  "/home/phil/code/phaserCordovaClock/plugins/cordova-plugin-statusbar/types/index.d.ts"
+ ],
+ "options": {
+  "module": 99,
+  "moduleResolution": 2,
+  "esModuleInterop": true,
+  "emitDecoratorMetadata": true,
+  "experimentalDecorators": true,
+  "importHelpers": true,
+  "target": 2,
+  "typeRoots": [
+   "/home/phil/code/phaserCordovaClock/node_modules/@types"
+  ],
+  "baseUrl": "/home/phil/code/phaserCordovaClock",
+  "paths": {
+   "@/*": [
+    "src/*"
+   ]
+  },
+  "lib": [
+   "lib.es2018.d.ts",
+   "lib.dom.d.ts"
+  ],
+  "sourceMap": true,
+  "configFilePath": "/home/phil/code/phaserCordovaClock/tsconfig.json"
+ }
+}
+Info 8    [15:2:57.994] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 9    [15:3:6.963] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 1 structureChanged: true Elapsed: 8969ms
+Info 10   [15:3:6.963] Project '/home/phil/code/phaserCordovaClock/tsconfig.json' (Configured)
+Info 11   [15:3:6.963] 	Files (132)
+
+Info 12   [15:3:6.963] -----------------------------------------------
+Info 13   [15:3:7.347] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 14   [15:3:7.422] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 2 structureChanged: false Elapsed: 75ms
+Info 15   [15:3:7.422] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 16   [15:3:7.426] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 17   [15:3:7.542] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 3 structureChanged: false Elapsed: 116ms
+Info 18   [15:3:7.543] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 19   [15:3:7.550] getCompletionData: Get current token: 0
+Info 20   [15:3:7.551] getCompletionData: Is inside comment: 0
+Info 21   [15:3:7.551] getCompletionData: Get previous token 1: 0
+Info 22   [15:3:7.552] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 23   [15:3:7.564] getCompletionData: Semantic work: 12
+Info 24   [15:3:7.573] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 4
+Info 25   [15:3:7.585] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 26   [15:3:7.691] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 4 structureChanged: false Elapsed: 106ms
+Info 27   [15:3:7.691] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 28   [15:3:7.692] getCompletionData: Get current token: 0
+Info 29   [15:3:7.698] getCompletionData: Is inside comment: 6
+Info 30   [15:3:7.698] getCompletionData: Get previous token 1: 0
+Info 31   [15:3:7.698] getCompletionData: Get previous token 2: 0
+Info 32   [15:3:7.699] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 33   [15:3:7.703] getCompletionData: Semantic work: 4
+Info 34   [15:3:7.711] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 7
+Info 35   [15:3:7.713] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 36   [15:3:7.769] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 5 structureChanged: false Elapsed: 56ms
+Info 37   [15:3:7.769] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 38   [15:3:7.770] getCompletionData: Get current token: 0
+Info 39   [15:3:7.771] getCompletionData: Is inside comment: 1
+Info 40   [15:3:7.771] getCompletionData: Get previous token 1: 0
+Info 41   [15:3:7.771] getCompletionData: Get previous token 2: 0
+Info 42   [15:3:7.771] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 43   [15:3:7.816] getCompletionData: Semantic work: 45
+Info 44   [15:3:7.821] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 4
+Info 45   [15:3:7.822] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 46   [15:3:7.868] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 6 structureChanged: false Elapsed: 46ms
+Info 47   [15:3:7.868] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 48   [15:3:7.869] getCompletionData: Get current token: 0
+Info 49   [15:3:7.869] getCompletionData: Is inside comment: 0
+Info 50   [15:3:7.869] getCompletionData: Get previous token 1: 0
+Info 51   [15:3:7.869] getCompletionData: Get previous token 2: 0
+Info 52   [15:3:7.870] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 53   [15:3:7.874] getCompletionData: Semantic work: 4
+Info 54   [15:3:7.887] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 12
+Info 55   [15:3:7.918] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 56   [15:3:8.24] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 7 structureChanged: false Elapsed: 106ms
+Info 57   [15:3:8.24] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 58   [15:3:8.42] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 59   [15:3:8.104] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 8 structureChanged: false Elapsed: 62ms
+Info 60   [15:3:8.104] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 61   [15:3:8.292] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 62   [15:3:8.337] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 9 structureChanged: false Elapsed: 45ms
+Info 63   [15:3:8.337] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 64   [15:3:8.909] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 65   [15:3:8.965] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 10 structureChanged: false Elapsed: 56ms
+Info 66   [15:3:8.965] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 67   [15:3:9.512] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 68   [15:3:9.588] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 11 structureChanged: false Elapsed: 76ms
+Info 69   [15:3:9.588] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 70   [15:3:12.501] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 71   [15:3:12.547] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 12 structureChanged: false Elapsed: 46ms
+Info 72   [15:3:12.548] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 73   [15:3:16.853] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 74   [15:3:16.921] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 13 structureChanged: false Elapsed: 68ms
+Info 75   [15:3:16.922] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 76   [15:3:16.924] getCompletionData: Get current token: 0
+Info 77   [15:3:16.924] getCompletionData: Is inside comment: 0
+Info 78   [15:3:16.924] getCompletionData: Get previous token 1: 0
+Info 79   [15:3:16.924] getCompletionData: Get previous token 2: 0
+Info 80   [15:3:16.925] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 81   [15:3:16.950] getSymbolsFromOtherSourceFileExports: Recomputing list
+Info 82   [15:3:17.13] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 83   [15:3:17.13] getSymbolsFromOtherSourceFileExports: 63
+Info 84   [15:3:17.18] getCompletionData: Semantic work: 93
+Info 85   [15:3:17.55] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 37
+Info 86   [15:3:17.631] getCompletionData: Get current token: 0
+Info 87   [15:3:17.632] getCompletionData: Is inside comment: 0
+Info 88   [15:3:17.632] getCompletionData: Get previous token 1: 0
+Info 89   [15:3:17.632] getCompletionData: Get previous token 2: 0
+Info 90   [15:3:17.632] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 91   [15:3:17.640] getSymbolsFromOtherSourceFileExports: Using cached list
+Info 92   [15:3:17.648] getCompletionData: Semantic work: 16
+Info 93   [15:3:19.86] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 94   [15:3:19.116] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 14 structureChanged: false Elapsed: 30ms
+Info 95   [15:3:19.116] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 96   [15:3:19.782] getCompletionData: Get current token: 0
+Info 97   [15:3:19.782] getCompletionData: Is inside comment: 0
+Info 98   [15:3:19.782] getCompletionData: Get previous token 1: 0
+Info 99   [15:3:19.782] getCompletionData: Get previous token 2: 0
+Info 100  [15:3:19.782] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 101  [15:3:19.801] getSymbolsFromOtherSourceFileExports: Recomputing list for details entry
+Info 102  [15:3:19.864] forEachExternalModuleToImportFrom: filtered out 0 modules by package.json contents
+Info 103  [15:3:19.866] getSymbolsFromOtherSourceFileExports: 65
+Info 104  [15:3:19.904] getCompletionData: Semantic work: 122
+Info 105  [15:3:20.286] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 106  [15:3:20.328] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 15 structureChanged: false Elapsed: 42ms
+Info 107  [15:3:20.328] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 108  [15:3:20.762] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 109  [15:3:20.792] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 16 structureChanged: false Elapsed: 30ms
+Info 110  [15:3:20.792] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 111  [15:3:20.927] getCompletionData: Get current token: 0
+Info 112  [15:3:20.928] getCompletionData: Is inside comment: 0
+Info 113  [15:3:20.928] getCompletionData: Get previous token 1: 0
+Info 114  [15:3:20.928] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 115  [15:3:20.932] getCompletionData: Semantic work: 4
+Info 116  [15:3:20.933] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 1
+Info 117  [15:3:21.623] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 118  [15:3:21.675] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 17 structureChanged: false Elapsed: 52ms
+Info 119  [15:3:21.675] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 120  [15:3:22.58] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 121  [15:3:22.87] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 18 structureChanged: false Elapsed: 29ms
+Info 122  [15:3:22.87] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 123  [15:3:22.507] getCompletionData: Get current token: 0
+Info 124  [15:3:22.507] getCompletionData: Is inside comment: 0
+Info 125  [15:3:22.507] getCompletionData: Get previous token 1: 0
+Info 126  [15:3:22.508] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 127  [15:3:22.511] getCompletionData: Semantic work: 3
+Info 128  [15:3:25.500] getCompletionData: Get current token: 0
+Info 129  [15:3:25.500] getCompletionData: Is inside comment: 0
+Info 130  [15:3:25.500] getCompletionData: Get previous token 1: 0
+Info 131  [15:3:25.500] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 132  [15:3:25.501] getCompletionData: Semantic work: 1
+Info 133  [15:3:30.492] getCompletionData: Get current token: 0
+Info 134  [15:3:30.492] getCompletionData: Is inside comment: 0
+Info 135  [15:3:30.492] getCompletionData: Get previous token 1: 0
+Info 136  [15:3:30.493] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 137  [15:3:30.494] getCompletionData: Semantic work: 1
+Info 138  [15:3:31.850] getCompletionData: Get current token: 0
+Info 139  [15:3:31.850] getCompletionData: Is inside comment: 0
+Info 140  [15:3:31.850] getCompletionData: Get previous token 1: 0
+Info 141  [15:3:31.850] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 142  [15:3:31.851] getCompletionData: Semantic work: 1
+Info 143  [15:3:37.918] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 144  [15:3:37.948] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 19 structureChanged: false Elapsed: 30ms
+Info 145  [15:3:37.948] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 146  [15:3:51.762] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 147  [15:3:51.808] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 20 structureChanged: false Elapsed: 46ms
+Info 148  [15:3:51.808] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 149  [15:3:55.688] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 150  [15:3:55.742] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 21 structureChanged: false Elapsed: 54ms
+Info 151  [15:3:55.742] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 152  [15:3:55.989] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 153  [15:3:56.50] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 154  [15:3:56.130] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 155  [15:3:56.254] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 156  [15:4:4.750] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 157  [15:4:8.673] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 158  [15:4:31.917] Search path: /home/phil/code/phaserCordovaClock/src/scenes
+Info 159  [15:4:31.918] For info: /home/phil/code/phaserCordovaClock/src/scenes/BootScene.ts :: Config file name: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 160  [15:4:38.454] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 161  [15:4:38.484] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 22 structureChanged: false Elapsed: 30ms
+Info 162  [15:4:38.485] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 163  [15:4:38.899] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 164  [15:4:38.944] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 23 structureChanged: false Elapsed: 45ms
+Info 165  [15:4:38.944] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 166  [15:4:38.947] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 167  [15:4:38.986] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 24 structureChanged: false Elapsed: 39ms
+Info 168  [15:4:38.987] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 169  [15:4:40.15] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 170  [15:4:40.47] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 25 structureChanged: false Elapsed: 32ms
+Info 171  [15:4:40.47] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 172  [15:4:40.48] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 173  [15:4:40.71] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 26 structureChanged: false Elapsed: 23ms
+Info 174  [15:4:40.72] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 175  [15:4:40.644] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 176  [15:4:40.671] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 27 structureChanged: false Elapsed: 27ms
+Info 177  [15:4:40.671] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 178  [15:4:41.87] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 179  [15:4:41.120] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 28 structureChanged: false Elapsed: 33ms
+Info 180  [15:4:41.120] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 181  [15:4:43.305] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 182  [15:4:43.323] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 29 structureChanged: false Elapsed: 17ms
+Info 183  [15:4:43.323] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 184  [15:4:44.353] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 185  [15:4:44.374] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 30 structureChanged: false Elapsed: 21ms
+Info 186  [15:4:44.374] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 187  [15:4:44.764] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 188  [15:4:44.787] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 31 structureChanged: false Elapsed: 23ms
+Info 189  [15:4:44.787] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 190  [15:4:45.141] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 191  [15:4:45.159] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 32 structureChanged: false Elapsed: 17ms
+Info 192  [15:4:45.159] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 193  [15:4:46.288] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 194  [15:4:46.316] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 33 structureChanged: false Elapsed: 28ms
+Info 195  [15:4:46.316] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 196  [15:4:46.334] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 197  [15:4:46.373] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 34 structureChanged: false Elapsed: 38ms
+Info 198  [15:4:46.373] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 199  [15:4:46.684] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 200  [15:4:46.698] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 35 structureChanged: false Elapsed: 14ms
+Info 201  [15:4:46.698] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 202  [15:4:46.842] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 203  [15:4:46.871] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 36 structureChanged: false Elapsed: 29ms
+Info 204  [15:4:46.871] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 205  [15:4:47.905] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 206  [15:4:47.924] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 37 structureChanged: false Elapsed: 19ms
+Info 207  [15:4:47.924] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 208  [15:4:48.237] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 209  [15:4:48.257] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 38 structureChanged: false Elapsed: 20ms
+Info 210  [15:4:48.257] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 211  [15:4:48.258] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 212  [15:4:48.283] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 39 structureChanged: false Elapsed: 25ms
+Info 213  [15:4:48.284] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 214  [15:4:48.849] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 215  [15:4:48.872] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 40 structureChanged: false Elapsed: 23ms
+Info 216  [15:4:48.872] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 217  [15:4:59.189] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src :: WatchInfo: /home/phil/code/phaserCordovaClock/src 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Wild card directory
+Info 218  [15:4:59.191] Elapsed:: 2ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src :: WatchInfo: /home/phil/code/phaserCordovaClock/src 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Wild card directory
+Info 219  [15:4:59.191] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src :: WatchInfo: /home/phil/code/phaserCordovaClock/src 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 220  [15:4:59.213] Elapsed:: 22ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src :: WatchInfo: /home/phil/code/phaserCordovaClock/src 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 221  [15:4:59.990] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 222  [15:5:0.611] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 41 structureChanged: true Elapsed: 621ms
+Info 223  [15:5:0.611] Different program with same set of files:: oldProgram.structureIsReused:: 1
+Info 224  [15:5:1.713] Before ensureProjectForOpenFiles:
+Info 225  [15:5:1.713] After ensureProjectForOpenFiles:
+Info 226  [15:5:1.714] got projects updated in background, updating diagnostics for /home/phil/code/phaserCordovaClock/src/scenes/clockFadeScene.ts,/home/phil/code/phaserCordovaClock/src/scenes/BootScene.ts
+Info 227  [15:5:3.317] FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src/assets.ts 1:: WatchInfo: /home/phil/code/phaserCordovaClock/src/assets.ts 500 undefined Project:  WatchType: Closed Script info
+Info 228  [15:5:3.318] Elapsed:: 1ms FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src/assets.ts 1:: WatchInfo: /home/phil/code/phaserCordovaClock/src/assets.ts 500 undefined Project:  WatchType: Closed Script info
+Info 229  [15:5:3.568] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 230  [15:5:3.595] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 42 structureChanged: false Elapsed: 27ms
+Info 231  [15:5:5.818] Before ensureProjectForOpenFiles:
+Info 232  [15:5:5.818] After ensureProjectForOpenFiles:
+Info 233  [15:5:5.818] got projects updated in background, updating diagnostics for /home/phil/code/phaserCordovaClock/src/scenes/clockFadeScene.ts,/home/phil/code/phaserCordovaClock/src/scenes/BootScene.ts
+Info 234  [17:10:33.564] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 235  [17:10:43.860] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 236  [17:10:43.920] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 43 structureChanged: false Elapsed: 60ms
+Info 237  [17:10:43.920] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 238  [17:10:43.921] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 239  [17:10:43.996] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 44 structureChanged: false Elapsed: 75ms
+Info 240  [17:10:43.996] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 241  [17:10:44.548] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 242  [17:10:44.622] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 45 structureChanged: false Elapsed: 74ms
+Info 243  [17:10:44.622] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 244  [17:10:44.623] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 245  [17:10:44.658] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 46 structureChanged: false Elapsed: 35ms
+Info 246  [17:10:44.658] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 247  [17:10:45.277] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 248  [17:10:45.310] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 47 structureChanged: false Elapsed: 33ms
+Info 249  [17:10:45.310] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 250  [17:10:45.786] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 251  [17:10:45.825] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 48 structureChanged: false Elapsed: 37ms
+Info 252  [17:10:45.825] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 253  [17:10:45.982] getCompletionData: Get current token: 0
+Info 254  [17:10:45.982] getCompletionData: Is inside comment: 0
+Info 255  [17:10:45.983] getCompletionData: Get previous token 1: 0
+Info 256  [17:10:45.983] getCompletionData: Get previous token 2: 0
+Info 257  [17:10:45.983] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 258  [17:10:45.992] getCompletionData: Semantic work: 8
+Info 259  [17:10:45.997] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 4
+Info 260  [17:10:45.998] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 261  [17:10:46.43] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 49 structureChanged: false Elapsed: 45ms
+Info 262  [17:10:46.43] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 263  [17:10:46.213] getCompletionData: Get current token: 1
+Info 264  [17:10:46.213] getCompletionData: Is inside comment: 0
+Info 265  [17:10:46.213] getCompletionData: Get previous token 1: 0
+Info 266  [17:10:46.213] getCompletionData: Get previous token 2: 0
+Info 267  [17:10:46.213] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 268  [17:10:46.215] getCompletionData: Semantic work: 2
+Info 269  [17:10:46.218] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 2
+Info 270  [17:10:47.629] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 271  [17:10:47.654] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 50 structureChanged: false Elapsed: 25ms
+Info 272  [17:10:47.654] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 273  [17:10:47.655] getCompletionData: Get current token: 0
+Info 274  [17:10:47.655] getCompletionData: Is inside comment: 0
+Info 275  [17:10:47.655] getCompletionData: Get previous token 1: 0
+Info 276  [17:10:47.655] getCompletionData: Get previous token 2: 0
+Info 277  [17:10:47.655] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 278  [17:10:47.659] getCompletionData: Semantic work: 4
+Info 279  [17:10:47.661] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 2
+Info 280  [17:10:47.987] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 281  [17:10:48.28] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 51 structureChanged: false Elapsed: 41ms
+Info 282  [17:10:48.28] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 283  [17:10:48.29] getCompletionData: Get current token: 0
+Info 284  [17:10:48.29] getCompletionData: Is inside comment: 0
+Info 285  [17:10:48.29] getCompletionData: Get previous token 1: 0
+Info 286  [17:10:48.29] getCompletionData: Get previous token 2: 0
+Info 287  [17:10:48.29] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 288  [17:10:48.32] getCompletionData: Semantic work: 2
+Info 289  [17:10:48.47] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 15
+Info 290  [17:10:48.919] getCompletionData: Get current token: 1
+Info 291  [17:10:48.919] getCompletionData: Is inside comment: 0
+Info 292  [17:10:48.919] getCompletionData: Get previous token 1: 0
+Info 293  [17:10:48.919] getCompletionData: Get previous token 2: 0
+Info 294  [17:10:48.919] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 295  [17:10:48.921] getCompletionData: Semantic work: 2
+Info 296  [17:10:50.793] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 297  [17:10:50.843] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 52 structureChanged: false Elapsed: 50ms
+Info 298  [17:10:50.843] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 299  [17:10:51.521] getCompletionData: Get current token: 1
+Info 300  [17:10:51.521] getCompletionData: Is inside comment: 0
+Info 301  [17:10:51.521] getCompletionData: Get previous token 1: 0
+Info 302  [17:10:51.521] getCompletionData: Get previous token 2: 0
+Info 303  [17:10:51.521] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 304  [17:10:51.524] getCompletionData: Semantic work: 3
+Info 305  [17:10:52.75] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 306  [17:10:52.175] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 53 structureChanged: false Elapsed: 100ms
+Info 307  [17:10:52.175] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 308  [17:10:53.234] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 309  [17:10:53.272] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 54 structureChanged: false Elapsed: 37ms
+Info 310  [17:10:53.272] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 311  [17:10:54.352] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 312  [17:10:54.380] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 55 structureChanged: false Elapsed: 27ms
+Info 313  [17:10:54.381] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 314  [17:10:55.626] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 315  [17:10:55.678] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 56 structureChanged: false Elapsed: 52ms
+Info 316  [17:10:55.678] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 317  [17:11:9.630] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 318  [17:11:9.653] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 57 structureChanged: false Elapsed: 22ms
+Info 319  [17:11:9.654] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 320  [17:11:16.469] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 321  [17:11:16.497] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 58 structureChanged: false Elapsed: 28ms
+Info 322  [17:11:16.497] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 323  [17:11:16.589] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 324  [17:11:16.642] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 59 structureChanged: false Elapsed: 53ms
+Info 325  [17:11:16.643] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 326  [17:11:17.283] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 327  [17:11:17.317] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 60 structureChanged: false Elapsed: 33ms
+Info 328  [17:11:17.318] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 329  [17:11:17.400] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 330  [17:11:17.429] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 61 structureChanged: false Elapsed: 29ms
+Info 331  [17:11:17.429] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 332  [17:11:17.779] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 333  [17:11:17.807] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 62 structureChanged: false Elapsed: 28ms
+Info 334  [17:11:17.807] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 335  [17:11:18.938] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 336  [17:11:18.971] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 63 structureChanged: false Elapsed: 33ms
+Info 337  [17:11:18.971] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 338  [17:11:21.593] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 339  [17:11:21.632] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 64 structureChanged: false Elapsed: 39ms
+Info 340  [17:11:21.632] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 341  [17:11:21.749] getCompletionData: Get current token: 0
+Info 342  [17:11:21.749] getCompletionData: Is inside comment: 0
+Info 343  [17:11:21.750] getCompletionData: Get previous token 1: 1
+Info 344  [17:11:21.750] getCompletionData: Get previous token 2: 0
+Info 345  [17:11:21.750] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 346  [17:11:21.752] getCompletionData: Semantic work: 2
+Info 347  [17:11:21.755] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 3
+Info 348  [17:11:23.184] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 349  [17:11:23.235] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 65 structureChanged: false Elapsed: 51ms
+Info 350  [17:11:23.235] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 351  [17:11:24.110] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 352  [17:11:24.133] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 66 structureChanged: false Elapsed: 23ms
+Info 353  [17:11:24.133] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 354  [17:11:31.441] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 355  [17:11:31.469] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 67 structureChanged: false Elapsed: 28ms
+Info 356  [17:11:31.469] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 357  [17:11:31.550] getCompletionData: Get current token: 0
+Info 358  [17:11:31.550] getCompletionData: Is inside comment: 0
+Info 359  [17:11:31.550] Returning an empty list because completion was inside a regular comment or plain text part of a JsDoc comment.
+Info 360  [17:12:24.461] FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src/assets.ts 1:: WatchInfo: /home/phil/code/phaserCordovaClock/src/assets.ts 500 undefined Project:  WatchType: Closed Script info
+Info 361  [17:12:24.462] Elapsed:: 1ms FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src/assets.ts 1:: WatchInfo: /home/phil/code/phaserCordovaClock/src/assets.ts 500 undefined Project:  WatchType: Closed Script info
+Info 362  [17:12:24.656] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src :: WatchInfo: /home/phil/code/phaserCordovaClock/src 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Wild card directory
+Info 363  [17:12:24.657] Elapsed:: 1ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src :: WatchInfo: /home/phil/code/phaserCordovaClock/src 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Wild card directory
+Info 364  [17:12:24.657] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src :: WatchInfo: /home/phil/code/phaserCordovaClock/src 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 365  [17:12:24.682] Elapsed:: 25ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src :: WatchInfo: /home/phil/code/phaserCordovaClock/src 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 366  [17:12:25.447] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 367  [17:12:26.157] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 68 structureChanged: true Elapsed: 710ms
+Info 368  [17:12:26.157] Different program with same set of files:: oldProgram.structureIsReused:: 1
+Info 369  [17:12:27.183] Before ensureProjectForOpenFiles:
+Info 370  [17:12:27.183] After ensureProjectForOpenFiles:
+Info 371  [17:12:27.184] got projects updated in background, updating diagnostics for /home/phil/code/phaserCordovaClock/src/scenes/clockFadeScene.ts,/home/phil/code/phaserCordovaClock/src/scenes/BootScene.ts
+Info 372  [17:13:41.975] FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/package.json 1:: WatchInfo: /home/phil/code/phaserCordovaClock/package.json 250 undefined Project:  WatchType: package.json file for import suggestions
+Info 373  [17:13:41.976] Elapsed:: 1ms FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/package.json 1:: WatchInfo: /home/phil/code/phaserCordovaClock/package.json 250 undefined Project:  WatchType: package.json file for import suggestions
+Info 374  [17:17:16.732] Search path: /home/phil/code/phaserCordovaClock/src
+Info 375  [17:17:16.733] For info: /home/phil/code/phaserCordovaClock/src/app.ts :: Config file name: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 376  [17:17:46.734] Search path: /home/phil/code/phaserCordovaClock/src
+Info 377  [17:17:46.734] For info: /home/phil/code/phaserCordovaClock/src/index.ts :: Config file name: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 378  [17:18:18.212] Search path: /home/phil/code/phaserCordovaClock/src
+Info 379  [17:18:18.213] For info: /home/phil/code/phaserCordovaClock/src/device.ts :: Config file name: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 380  [17:18:35.788] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 381  [17:18:35.836] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 69 structureChanged: false Elapsed: 48ms
+Info 382  [17:18:35.836] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 383  [17:18:39.125] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 384  [17:18:39.591] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 385  [17:18:40.908] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 386  [17:18:41.708] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 387  [17:18:42.522] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 388  [17:18:42.547] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 70 structureChanged: false Elapsed: 25ms
+Info 389  [17:18:42.548] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 390  [17:18:42.758] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 391  [17:18:42.796] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 392  [17:18:43.78] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 393  [17:18:43.335] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 394  [17:18:43.723] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 395  [17:18:44.797] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 396  [17:18:45.443] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 397  [17:18:46.536] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 398  [17:18:46.807] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 399  [17:18:48.704] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 400  [17:18:48.727] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 71 structureChanged: false Elapsed: 23ms
+Info 401  [17:18:48.727] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 402  [17:18:48.961] getCompletionData: Get current token: 0
+Info 403  [17:18:48.961] getCompletionData: Is inside comment: 0
+Info 404  [17:18:48.961] getCompletionData: Get previous token 1: 0
+Info 405  [17:18:48.961] getCompletionData: Get previous token 2: 0
+Info 406  [17:18:48.961] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 407  [17:18:48.976] getSymbolsFromOtherSourceFileExports: Recomputing list
+Info 408  [17:18:49.3] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 409  [17:18:49.3] getSymbolsFromOtherSourceFileExports: 27
+Info 410  [17:18:49.8] getCompletionData: Semantic work: 47
+Info 411  [17:18:49.55] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 38
+Info 412  [17:18:49.98] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 413  [17:18:49.292] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 72 structureChanged: false Elapsed: 194ms
+Info 414  [17:18:49.292] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 415  [17:18:50.69] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 416  [17:18:50.89] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 73 structureChanged: false Elapsed: 20ms
+Info 417  [17:18:50.90] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 418  [17:18:50.547] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 419  [17:18:50.571] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 74 structureChanged: false Elapsed: 24ms
+Info 420  [17:18:50.571] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 421  [17:18:51.565] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 422  [17:18:51.585] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 75 structureChanged: false Elapsed: 20ms
+Info 423  [17:18:51.585] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 424  [17:18:52.107] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 425  [17:18:52.152] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 76 structureChanged: false Elapsed: 45ms
+Info 426  [17:18:52.152] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 427  [17:18:52.153] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 428  [17:18:52.212] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 77 structureChanged: false Elapsed: 58ms
+Info 429  [17:18:52.212] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 430  [17:18:53.164] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 431  [17:18:53.193] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 78 structureChanged: false Elapsed: 29ms
+Info 432  [17:18:53.193] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 433  [17:19:12.582] FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/package.json 1:: WatchInfo: /home/phil/code/phaserCordovaClock/package.json 250 undefined Project:  WatchType: package.json file for import suggestions
+Info 434  [17:19:12.583] Elapsed:: 1ms FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/package.json 1:: WatchInfo: /home/phil/code/phaserCordovaClock/package.json 250 undefined Project:  WatchType: package.json file for import suggestions
+Info 435  [17:20:10.785] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/node_modules :: WatchInfo: /home/phil/code/phaserCordovaClock/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 436  [17:20:10.788] Elapsed:: 3ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/node_modules :: WatchInfo: /home/phil/code/phaserCordovaClock/node_modules 1 undefined Project:  WatchType: node_modules for closed script infos in them
+Info 437  [17:20:10.788] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/node_modules :: WatchInfo: /home/phil/code/phaserCordovaClock/node_modules 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 438  [17:20:10.796] Elapsed:: 8ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/node_modules :: WatchInfo: /home/phil/code/phaserCordovaClock/node_modules 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 439  [17:20:11.47] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 440  [17:20:11.968] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 79 structureChanged: true Elapsed: 921ms
+Info 441  [17:20:11.968] Different program with same set of files:: oldProgram.structureIsReused:: 1
+Info 442  [17:20:12.373] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/package.json.2996722568 :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 443  [17:20:12.373] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/package.json.2996722568 :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 444  [17:20:12.378] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/package.json.2996722568 :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 445  [17:20:12.378] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/package.json.2996722568 :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 446  [17:20:12.378] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/package.json :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 447  [17:20:12.400] Elapsed:: 22ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/package.json :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 448  [17:20:12.590] FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/package.json 1:: WatchInfo: /home/phil/code/phaserCordovaClock/package.json 250 undefined Project:  WatchType: package.json file for import suggestions
+Info 449  [17:20:12.590] Elapsed:: 0ms FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/package.json 1:: WatchInfo: /home/phil/code/phaserCordovaClock/package.json 250 undefined Project:  WatchType: package.json file for import suggestions
+Info 450  [17:20:13.297] Before ensureProjectForOpenFiles:
+Info 451  [17:20:13.298] After ensureProjectForOpenFiles:
+Info 452  [17:20:13.299] got projects updated in background, updating diagnostics for /home/phil/code/phaserCordovaClock/src/scenes/clockFadeScene.ts,/home/phil/code/phaserCordovaClock/src/scenes/BootScene.ts,/home/phil/code/phaserCordovaClock/src/app.ts,/home/phil/code/phaserCordovaClock/src/index.ts,/home/phil/code/phaserCordovaClock/src/device.ts
+Info 453  [17:20:43.330] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 454  [17:20:44.49] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 455  [17:20:44.97] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 80 structureChanged: false Elapsed: 48ms
+Info 456  [17:20:44.101] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 457  [17:20:44.426] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 458  [17:20:44.448] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 459  [17:22:43.932] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src :: WatchInfo: /home/phil/code/phaserCordovaClock/src 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Wild card directory
+Info 460  [17:22:43.933] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src :: WatchInfo: /home/phil/code/phaserCordovaClock/src 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Wild card directory
+Info 461  [17:22:43.934] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src :: WatchInfo: /home/phil/code/phaserCordovaClock/src 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 462  [17:22:43.969] Elapsed:: 35ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src :: WatchInfo: /home/phil/code/phaserCordovaClock/src 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 463  [17:22:44.737] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 464  [17:22:45.101] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 81 structureChanged: true Elapsed: 363ms
+Info 465  [17:22:45.102] Different program with same set of files:: oldProgram.structureIsReused:: 1
+Info 466  [17:22:46.469] Before ensureProjectForOpenFiles:
+Info 467  [17:22:46.469] After ensureProjectForOpenFiles:
+Info 468  [17:22:46.469] got projects updated in background, updating diagnostics for /home/phil/code/phaserCordovaClock/src/scenes/clockFadeScene.ts,/home/phil/code/phaserCordovaClock/src/scenes/BootScene.ts,/home/phil/code/phaserCordovaClock/src/app.ts,/home/phil/code/phaserCordovaClock/src/index.ts,/home/phil/code/phaserCordovaClock/src/device.ts
+Info 469  [17:22:47.974] FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src/assets.ts 1:: WatchInfo: /home/phil/code/phaserCordovaClock/src/assets.ts 500 undefined Project:  WatchType: Closed Script info
+Info 470  [17:22:47.975] Elapsed:: 1ms FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src/assets.ts 1:: WatchInfo: /home/phil/code/phaserCordovaClock/src/assets.ts 500 undefined Project:  WatchType: Closed Script info
+Info 471  [17:22:48.226] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 472  [17:22:48.232] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 82 structureChanged: false Elapsed: 6ms
+Info 473  [17:22:50.475] Before ensureProjectForOpenFiles:
+Info 474  [17:22:50.475] After ensureProjectForOpenFiles:
+Info 475  [17:22:50.475] got projects updated in background, updating diagnostics for /home/phil/code/phaserCordovaClock/src/scenes/clockFadeScene.ts,/home/phil/code/phaserCordovaClock/src/scenes/BootScene.ts,/home/phil/code/phaserCordovaClock/src/app.ts,/home/phil/code/phaserCordovaClock/src/index.ts,/home/phil/code/phaserCordovaClock/src/device.ts
+Info 476  [17:24:7.997] FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/package.json 1:: WatchInfo: /home/phil/code/phaserCordovaClock/package.json 250 undefined Project:  WatchType: package.json file for import suggestions
+Info 477  [17:24:7.997] Elapsed:: 0ms FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/package.json 1:: WatchInfo: /home/phil/code/phaserCordovaClock/package.json 250 undefined Project:  WatchType: package.json file for import suggestions
+Info 478  [17:34:57.220] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 479  [17:34:57.317] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 83 structureChanged: false Elapsed: 97ms
+Info 480  [17:34:57.317] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 481  [17:34:59.832] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 482  [17:34:59.903] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 84 structureChanged: false Elapsed: 70ms
+Info 483  [17:34:59.903] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 484  [17:35:1.909] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 485  [17:35:1.952] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 85 structureChanged: false Elapsed: 43ms
+Info 486  [17:35:1.952] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 487  [17:35:3.230] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 488  [17:35:3.266] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 86 structureChanged: false Elapsed: 36ms
+Info 489  [17:35:3.267] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 490  [17:35:3.399] getCompletionData: Get current token: 0
+Info 491  [17:35:3.399] getCompletionData: Is inside comment: 0
+Info 492  [17:35:3.399] getCompletionData: Get previous token 1: 0
+Info 493  [17:35:3.399] getCompletionData: Get previous token 2: 0
+Info 494  [17:35:3.400] getCompletionsAtPosition: isCompletionListBlocker: 1
+Info 495  [17:35:3.414] getCompletionData: Semantic work: 14
+Info 496  [17:35:3.424] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 5
+Info 497  [17:35:3.512] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 498  [17:35:3.546] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 87 structureChanged: false Elapsed: 34ms
+Info 499  [17:35:3.546] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 500  [17:35:3.668] getCompletionData: Get current token: 0
+Info 501  [17:35:3.668] getCompletionData: Is inside comment: 0
+Info 502  [17:35:3.668] getCompletionData: Get previous token 1: 0
+Info 503  [17:35:3.668] getCompletionData: Get previous token 2: 0
+Info 504  [17:35:3.668] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 505  [17:35:3.671] getCompletionData: Semantic work: 3
+Info 506  [17:35:3.674] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 3
+Info 507  [17:35:3.806] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 508  [17:35:3.844] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 88 structureChanged: false Elapsed: 38ms
+Info 509  [17:35:3.844] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 510  [17:35:3.969] getCompletionData: Get current token: 0
+Info 511  [17:35:3.970] getCompletionData: Is inside comment: 0
+Info 512  [17:35:3.970] getCompletionData: Get previous token 1: 0
+Info 513  [17:35:3.971] getCompletionData: Get previous token 2: 1
+Info 514  [17:35:3.971] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 515  [17:35:3.977] getCompletionData: Semantic work: 6
+Info 516  [17:35:3.983] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 6
+Info 517  [17:35:4.280] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 518  [17:35:4.327] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 89 structureChanged: false Elapsed: 46ms
+Info 519  [17:35:4.327] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 520  [17:35:4.328] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 521  [17:35:4.368] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 90 structureChanged: false Elapsed: 40ms
+Info 522  [17:35:4.368] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 523  [17:35:4.621] getCompletionData: Get current token: 1
+Info 524  [17:35:4.621] getCompletionData: Is inside comment: 0
+Info 525  [17:35:4.621] getCompletionData: Get previous token 1: 0
+Info 526  [17:35:4.621] getCompletionData: Get previous token 2: 0
+Info 527  [17:35:4.621] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 528  [17:35:4.624] getCompletionData: Semantic work: 3
+Info 529  [17:35:4.627] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 3
+Info 530  [17:35:4.961] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 531  [17:35:5.23] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 91 structureChanged: false Elapsed: 62ms
+Info 532  [17:35:5.23] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 533  [17:35:5.304] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 534  [17:35:5.370] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 92 structureChanged: false Elapsed: 66ms
+Info 535  [17:35:5.370] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 536  [17:35:5.386] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 537  [17:35:5.591] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 93 structureChanged: false Elapsed: 205ms
+Info 538  [17:35:5.591] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 539  [17:35:5.644] getCompletionData: Get current token: 1
+Info 540  [17:35:5.644] getCompletionData: Is inside comment: 0
+Info 541  [17:35:5.644] getCompletionData: Get previous token 1: 0
+Info 542  [17:35:5.644] getCompletionData: Get previous token 2: 0
+Info 543  [17:35:5.644] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 544  [17:35:5.676] getSymbolsFromOtherSourceFileExports: Recomputing list
+Info 545  [17:35:5.722] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 546  [17:35:5.722] getSymbolsFromOtherSourceFileExports: 46
+Info 547  [17:35:5.732] getCompletionData: Semantic work: 88
+Info 548  [17:35:5.805] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 50
+Info 549  [17:35:8.850] getCompletionData: Get current token: 0
+Info 550  [17:35:8.850] getCompletionData: Is inside comment: 0
+Info 551  [17:35:8.850] getCompletionData: Get previous token 1: 0
+Info 552  [17:35:8.850] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 553  [17:35:8.858] getSymbolsFromOtherSourceFileExports: Using cached list
+Info 554  [17:35:8.866] getCompletionData: Semantic work: 16
+Info 555  [17:35:8.909] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 41
+Info 556  [17:35:10.564] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 557  [17:35:10.612] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 94 structureChanged: false Elapsed: 48ms
+Info 558  [17:35:10.612] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 559  [17:35:15.173] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 560  [17:35:15.201] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 95 structureChanged: false Elapsed: 28ms
+Info 561  [17:35:15.201] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 562  [17:35:15.529] forEachExternalModuleToImportFrom: filtered out 75 modules by package.json contents
+Info 563  [17:35:16.48] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 564  [17:35:16.84] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 96 structureChanged: false Elapsed: 36ms
+Info 565  [17:35:16.85] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 566  [17:35:18.324] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 567  [17:35:18.394] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 97 structureChanged: false Elapsed: 70ms
+Info 568  [17:35:18.394] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 569  [17:35:20.540] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 570  [17:35:20.570] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 98 structureChanged: false Elapsed: 30ms
+Info 571  [17:35:20.570] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 572  [17:35:20.716] getCompletionData: Get current token: 0
+Info 573  [17:35:20.716] getCompletionData: Is inside comment: 0
+Info 574  [17:35:20.716] getCompletionData: Get previous token 1: 0
+Info 575  [17:35:20.716] getCompletionData: Get previous token 2: 0
+Info 576  [17:35:20.716] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 577  [17:35:20.719] getCompletionData: Semantic work: 2
+Info 578  [17:35:20.722] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 2
+Info 579  [17:35:23.500] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 580  [17:35:23.631] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 99 structureChanged: false Elapsed: 131ms
+Info 581  [17:35:23.638] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 582  [17:35:24.152] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 583  [17:35:24.207] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 100 structureChanged: false Elapsed: 55ms
+Info 584  [17:35:24.207] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 585  [17:35:24.379] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 586  [17:35:24.493] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 101 structureChanged: false Elapsed: 114ms
+Info 587  [17:35:24.493] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 588  [17:35:25.976] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 589  [17:35:26.19] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 102 structureChanged: false Elapsed: 43ms
+Info 590  [17:35:26.19] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Err 591   [17:35:41.95] Exception on executing command {"command":"getCodeFixes","seq":2792,"type":"request","arguments":{"file":"/home/phil/code/phaserCordovaClock/src/scenes/clockFadeScene.ts","startLine":308,"startOffset":10,"endLine":308,"endOffset":10,"errorCodes":[7044,6133,7044,6133]}}:
+
+    Debug Failure. Invalid cast. The supplied value [object Object] did not pass the test 'isParameter'.
+
+    Error: Debug Failure. Invalid cast. The supplied value [object Object] did not pass the test 'isParameter'.
+        at Object.cast (/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/tsserver.js:1387:25)
+        at doChange (/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/tsserver.js:132217:40)
+        at /home/phil/code/phaserCordovaClock/node_modules/typescript/lib/tsserver.js:132113:109
+        at Function.ChangeTracker.with (/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/tsserver.js:126194:17)
+        at Object.getCodeActions (/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/tsserver.js:132113:64)
+        at /home/phil/code/phaserCordovaClock/node_modules/typescript/lib/tsserver.js:127365:77
+        at Object.flatMap (/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/tsserver.js:465:25)
+        at Object.getFixes (/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/tsserver.js:127365:23)
+        at /home/phil/code/phaserCordovaClock/node_modules/typescript/lib/tsserver.js:139177:35
+        at Object.flatMap (/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/tsserver.js:465:25)
+        at Object.getCodeFixesAtPosition (/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/tsserver.js:139175:23)
+        at IOSession.Session.getCodeFixes (/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/tsserver.js:149276:64)
+        at Session.handlers.ts.createMapFromTemplate._a.<computed> (/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/tsserver.js:148013:61)
+        at /home/phil/code/phaserCordovaClock/node_modules/typescript/lib/tsserver.js:149526:88
+        at IOSession.Session.executeWithRequestId (/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/tsserver.js:149517:28)
+        at IOSession.Session.executeCommand (/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/tsserver.js:149526:33)
+        at IOSession.Session.onMessage (/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/tsserver.js:149550:35)
+        at Interface.<anonymous> (/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/tsserver.js:150866:27)
+        at Interface.emit (events.js:311:20)
+        at Interface._onLine (readline.js:322:10)
+        at Interface._normalWrite (readline.js:467:12)
+        at Socket.ondata (readline.js:179:10)
+        at Socket.emit (events.js:311:20)
+        at addChunk (_stream_readable.js:294:12)
+        at readableAddChunk (_stream_readable.js:275:11)
+        at Socket.Readable.push (_stream_readable.js:209:10)
+        at Pipe.onStreamRead (internal/stream_base_commons.js:186:23)
+Info 592  [17:35:48.883] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 593  [17:35:48.931] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 103 structureChanged: false Elapsed: 48ms
+Info 594  [17:35:48.931] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 595  [17:35:49.652] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 596  [17:35:49.683] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 104 structureChanged: false Elapsed: 31ms
+Info 597  [17:35:49.683] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 598  [17:35:49.885] getCompletionData: Get current token: 0
+Info 599  [17:35:49.885] getCompletionData: Is inside comment: 0
+Info 600  [17:35:49.885] getCompletionData: Get previous token 1: 0
+Info 601  [17:35:49.885] getCompletionData: Get previous token 2: 0
+Info 602  [17:35:49.886] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 603  [17:35:49.887] getCompletionData: Semantic work: 1
+Info 604  [17:35:49.898] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 11
+Info 605  [17:35:50.60] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 606  [17:35:50.122] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 105 structureChanged: false Elapsed: 62ms
+Info 607  [17:35:50.122] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 608  [17:35:50.336] getCompletionData: Get current token: 0
+Info 609  [17:35:50.336] getCompletionData: Is inside comment: 0
+Info 610  [17:35:50.339] getCompletionData: Get previous token 1: 3
+Info 611  [17:35:50.339] getCompletionData: Get previous token 2: 0
+Info 612  [17:35:50.339] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 613  [17:35:50.341] getCompletionData: Semantic work: 1
+Info 614  [17:35:50.344] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 2
+Info 615  [17:35:51.437] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 616  [17:35:51.462] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 106 structureChanged: false Elapsed: 25ms
+Info 617  [17:35:51.462] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 618  [17:35:51.688] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 619  [17:35:51.759] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 107 structureChanged: false Elapsed: 71ms
+Info 620  [17:35:51.759] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 621  [17:35:52.460] getCompletionData: Get current token: 0
+Info 622  [17:35:52.460] getCompletionData: Is inside comment: 0
+Info 623  [17:35:52.460] getCompletionData: Get previous token 1: 0
+Info 624  [17:35:52.460] getCompletionData: Get previous token 2: 0
+Info 625  [17:35:52.460] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 626  [17:35:52.462] getCompletionData: Semantic work: 2
+Info 627  [17:35:53.88] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 628  [17:35:53.141] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 108 structureChanged: false Elapsed: 53ms
+Info 629  [17:35:53.141] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 630  [17:36:21.575] FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/package.json 1:: WatchInfo: /home/phil/code/phaserCordovaClock/package.json 250 undefined Project:  WatchType: package.json file for import suggestions
+Info 631  [17:36:21.576] Elapsed:: 1ms FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/package.json 1:: WatchInfo: /home/phil/code/phaserCordovaClock/package.json 250 undefined Project:  WatchType: package.json file for import suggestions
+Info 632  [17:36:56.617] FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src/assets.ts 1:: WatchInfo: /home/phil/code/phaserCordovaClock/src/assets.ts 500 undefined Project:  WatchType: Closed Script info
+Info 633  [17:36:56.617] Elapsed:: 0ms FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src/assets.ts 1:: WatchInfo: /home/phil/code/phaserCordovaClock/src/assets.ts 500 undefined Project:  WatchType: Closed Script info
+Info 634  [17:36:56.848] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src :: WatchInfo: /home/phil/code/phaserCordovaClock/src 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Wild card directory
+Info 635  [17:36:56.867] Elapsed:: 18ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src :: WatchInfo: /home/phil/code/phaserCordovaClock/src 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Wild card directory
+Info 636  [17:36:56.867] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src :: WatchInfo: /home/phil/code/phaserCordovaClock/src 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 637  [17:36:57.266] Elapsed:: 398ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src :: WatchInfo: /home/phil/code/phaserCordovaClock/src 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 638  [17:36:58.163] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 639  [17:36:58.760] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 109 structureChanged: true Elapsed: 597ms
+Info 640  [17:36:58.760] Different program with same set of files:: oldProgram.structureIsReused:: 1
+Info 641  [17:36:59.766] Before ensureProjectForOpenFiles:
+Info 642  [17:36:59.766] After ensureProjectForOpenFiles:
+Info 643  [17:36:59.767] got projects updated in background, updating diagnostics for /home/phil/code/phaserCordovaClock/src/scenes/clockFadeScene.ts,/home/phil/code/phaserCordovaClock/src/scenes/BootScene.ts,/home/phil/code/phaserCordovaClock/src/app.ts,/home/phil/code/phaserCordovaClock/src/index.ts,/home/phil/code/phaserCordovaClock/src/device.ts
+Info 644  [17:37:49.255] FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/package.json 1:: WatchInfo: /home/phil/code/phaserCordovaClock/package.json 250 undefined Project:  WatchType: package.json file for import suggestions
+Info 645  [17:37:49.256] Elapsed:: 1ms FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/package.json 1:: WatchInfo: /home/phil/code/phaserCordovaClock/package.json 250 undefined Project:  WatchType: package.json file for import suggestions
+Info 646  [17:51:27.899] Search path: /home/phil/code/phaserCordovaClock/src/scenes
+Info 647  [17:51:27.900] For info: /home/phil/code/phaserCordovaClock/src/scenes/TitleScene.ts :: Config file name: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 648  [17:59:23.26] Search path: /home/phil/code/phaserCordovaClock/src/scenes
+Info 649  [17:59:23.27] For info: /home/phil/code/phaserCordovaClock/src/scenes/PreloadScene.ts :: Config file name: /home/phil/code/phaserCordovaClock/tsconfig.json

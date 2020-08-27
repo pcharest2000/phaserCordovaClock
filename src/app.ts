@@ -2,7 +2,7 @@ import * as Phaser from "phaser";
 import BootScene from "@/scenes/BootScene";
 import PreloadScene from "@/scenes/PreloadScene";
 import TitleScene from "@/scenes/TitleScene";
-
+import ClockFadeScene  from "@/scenes/clockFadeScene";
 export default class App extends Phaser.Game {
   public static start(): App {
     const gameWidth: number = GAME_WIDTH;
@@ -28,6 +28,7 @@ export default class App extends Phaser.Game {
 
   constructor(config: Phaser.Types.Core.GameConfig) {
     super(config);
+    this.scene.add("ClockFadeScene", ClockFadeScene);
     this.scene.add("BootScene", BootScene);
     this.scene.add("PreloadScene", PreloadScene);
     this.scene.add("TitleScene", TitleScene);

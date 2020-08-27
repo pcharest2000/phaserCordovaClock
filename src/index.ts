@@ -57,5 +57,6 @@ window.onload = async (): Promise<void> => {
   await Device.init();
   await loadLocales();
   await loadWebFont();
+ // await screen.lockOrientation('landscape');
   App.start();
 };

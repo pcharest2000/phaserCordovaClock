@@ -1,6 +1,7 @@
 webpack/
 __mocks__/
 www/
+src/
 scripts/
 *.config.js
 src/assets.ts

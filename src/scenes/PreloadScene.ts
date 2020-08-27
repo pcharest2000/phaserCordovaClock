@@ -42,6 +42,7 @@ export default class PreloadScene extends Phaser.Scene {
   }
 
   private startGame(): void {
-    this.scene.start("TitleScene");
+    this.scene.start("ClockFadeScene");
+   // this.scene.start("TitleScene");
   }
 }

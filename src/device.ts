@@ -70,6 +70,7 @@ function setup(): Promise<void> {
       false
     );
 
+    window.screen.orientation.lock('landscape');
     navigator.splashscreen.hide();
     resolve();
   });
@@ -90,6 +91,8 @@ const Device = {
             })
             .finally(() => {
               logger.log("[Device] ready");
+              StatusBar.hide();
+// Hide system UI until user interacts
               resolve();
             });
         });

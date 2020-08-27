@@ -20,6 +20,7 @@ export default class BootScene extends Phaser.Scene {
       textSizeNormal: 34,
       textSizeLarge: 46,
     });
-    this.scene.start("PreloadScene");
+    console.log("In Boot Scene");
+    this.scene.start("ClockFadeScene");
   }
 }

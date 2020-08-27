@@ -28,8 +28,8 @@ module.exports = {
   }]),
   new webpack.DefinePlugin({
       DEBUG: true,
-      GAME_WIDTH: 540,
-      GAME_HEIGHT: 960,
+      GAME_WIDTH: 1920,
+      GAME_HEIGHT: 1080,
     }),
     new DotEnvPlugin(),
   ],
