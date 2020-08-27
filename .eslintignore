@@ -1,0 +1,6 @@
+webpack/
+__mocks__/
+www/
+scripts/
+*.config.js
+src/assets.ts

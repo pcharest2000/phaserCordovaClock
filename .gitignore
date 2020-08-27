@@ -1,0 +1,38 @@
+#never commit node_modules
+node_modules
+
+#never commit packed files
+www/assets
+www/locales
+www/bundle*
+src/assets.ts
+
+.vscode/
+typings/
+
+# Mac
+.DS_Store
+
+# Node
+npm-debug.log
+/node_modules
+
+# Cordova
+/platforms
+/plugins
+build.json
+build.keystore
+
+# Android
+.gradle/
+
+# res
+resources/signing
+
+# environment
+.env
+
+# Local Netlify folder
+.netlify
+
+*.bak
