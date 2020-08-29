@@ -1,6 +1,5 @@
 import * as PixelUI from "@/pixelui";
 import * as Assets from "@/assets";
-
 export default class BootScene extends Phaser.Scene {
   public init(): void {
     this.scale.refresh();

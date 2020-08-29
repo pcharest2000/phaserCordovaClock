@@ -1,0 +1,83 @@
+[22:53:12.496] Global cache location '/home/phil/.cache/typescript/3.9', safe file path '/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/typingSafeList.json', types map path /home/phil/code/phaserCordovaClock/node_modules/typescript/lib/typesMap.json
+[22:53:12.497] Processing cache location '/home/phil/.cache/typescript/3.9'
+[22:53:12.498] Trying to find '/home/phil/.cache/typescript/3.9/package.json'...
+[22:53:12.499] Loaded content of '/home/phil/.cache/typescript/3.9/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.504"}}
+[22:53:12.499] Loaded content of '/home/phil/.cache/typescript/3.9/package-lock.json'
+[22:53:12.499] Finished processing cache location '/home/phil/.cache/typescript/3.9'
+[22:53:12.500] Process id: 48288
+[22:53:12.500] NPM location: /usr/local/bin/npm (explicit '--npmLocation' not  provided)
+[22:53:12.500] validateDefaultNpmLocation: false
+[22:53:12.500] Npm config file: /home/phil/.cache/typescript/3.9/package.json
+[22:53:12.501] Updating types-registry npm package...
+[22:53:12.501] Exec: /usr/local/bin/npm install --ignore-scripts types-registry@latest
+[22:53:15.24]     Succeeded. stdout:
+    + types-registry@0.1.505
+    updated 1 package and audited 1 package in 1.052s
+found 0 vulnerabilities
+
+
+[22:53:15.24] Updated types-registry npm package
+[23:40:38.547] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/lib.d.ts","/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/lib.es5.d.ts","/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/lib.dom.d.ts","/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/lib.scripthost.d.ts","/home/phil/code/phaserCordovaClock/webpack/base.js"],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":["babel-register","copy-webpack-plugin","dotenv-defaults","dotenv-webpack","inherits","schema-utils","webpack-log","webpack-shell-plugin"],"projectRootPath":"/home/phil/code/phaserCordovaClock/webpack","kind":"discover"}
+[23:40:38.646] Loaded safelist from types map file '/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/typesMap.json'
+[23:40:38.648] Explicitly included types: []
+[23:40:38.651] Inferred typings from unresolved imports: ["babel-register","copy-webpack-plugin","dotenv-defaults","dotenv-webpack","inherits","schema-utils","webpack-log","webpack-shell-plugin"]
+[23:40:38.652] Result: {"cachedTypingPaths":[],"newTypingNames":["babel-register","copy-webpack-plugin","dotenv-defaults","dotenv-webpack","inherits","schema-utils","webpack-log","webpack-shell-plugin"],"filesToWatch":["/home/phil/code/phaserCordovaClock/webpack/bower_components","/home/phil/code/phaserCordovaClock/webpack/node_modules"]}
+[23:40:38.652] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":["babel-register","copy-webpack-plugin","dotenv-defaults","dotenv-webpack","inherits","schema-utils","webpack-log","webpack-shell-plugin"],"filesToWatch":["/home/phil/code/phaserCordovaClock/webpack/bower_components","/home/phil/code/phaserCordovaClock/webpack/node_modules"]}
+[23:40:38.653] DirectoryWatcher:: Added:: WatchInfo: /home/phil/code/phaserCordovaClock/webpack/bower_components
+[23:40:38.659] DirectoryWatcher:: Added:: WatchInfo: /home/phil/code/phaserCordovaClock/webpack/node_modules
+[23:40:38.659] Installing typings ["babel-register","copy-webpack-plugin","dotenv-defaults","dotenv-webpack","inherits","schema-utils","webpack-log","webpack-shell-plugin"]
+[23:40:38.660] 'babel-register':: Entry for package 'babel-register' does not exist in local types registry - skipping...
+[23:40:38.660] 'schema-utils':: Entry for package 'schema-utils' does not exist in local types registry - skipping...
+[23:40:38.661] 'webpack-log':: Entry for package 'webpack-log' does not exist in local types registry - skipping...
+[23:40:38.661] Npm config file: /home/phil/.cache/typescript/3.9/package.json
+[23:40:38.661] Sending response:
+    {"kind":"event::beginInstallTypes","eventId":1,"typingsInstallerVersion":"3.9.5","projectName":"/dev/null/inferredProject1*"}
+[23:40:38.665] Response has been sent.
+[23:40:38.666] #1 with arguments'["@types/copy-webpack-plugin@ts3.9","@types/dotenv-defaults@ts3.9","@types/dotenv-webpack@ts3.9","@types/inherits@ts3.9","@types/webpack-shell-plugin@ts3.9"]'.
+[23:40:38.667] Exec: /usr/local/bin/npm install --ignore-scripts @types/copy-webpack-plugin@ts3.9 @types/dotenv-defaults@ts3.9 @types/dotenv-webpack@ts3.9 @types/inherits@ts3.9 @types/webpack-shell-plugin@ts3.9 --save-dev --user-agent="typesInstaller/3.9.5"
+[23:40:44.372]     Succeeded. stdout:
+    + @types/inherits@0.0.30
+    + @types/copy-webpack-plugin@6.0.0
++ @types/dotenv-defaults@2.0.0
++ @types/dotenv-webpack@1.8.0
++ @types/webpack-shell-plugin@0.5.0
+added 15 packages from 107 contributors and audited 16 packages in 4.126s
+found 0 vulnerabilities
+
+
+[23:40:44.372] npm install #1 took: 5705 ms
+[23:40:44.372] Installed typings ["@types/copy-webpack-plugin@ts3.9","@types/dotenv-defaults@ts3.9","@types/dotenv-webpack@ts3.9","@types/inherits@ts3.9","@types/webpack-shell-plugin@ts3.9"]
+[23:40:44.488] Installed typing files ["/home/phil/.cache/typescript/3.9/node_modules/@types/copy-webpack-plugin/index.d.ts","/home/phil/.cache/typescript/3.9/node_modules/@types/dotenv-defaults/index.d.ts","/home/phil/.cache/typescript/3.9/node_modules/@types/dotenv-webpack/index.d.ts","/home/phil/.cache/typescript/3.9/node_modules/@types/inherits/index.d.ts","/home/phil/.cache/typescript/3.9/node_modules/@types/webpack-shell-plugin/index.d.ts"]
+[23:40:44.488] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":["/home/phil/.cache/typescript/3.9/node_modules/@types/copy-webpack-plugin/index.d.ts","/home/phil/.cache/typescript/3.9/node_modules/@types/dotenv-defaults/index.d.ts","/home/phil/.cache/typescript/3.9/node_modules/@types/dotenv-webpack/index.d.ts","/home/phil/.cache/typescript/3.9/node_modules/@types/inherits/index.d.ts","/home/phil/.cache/typescript/3.9/node_modules/@types/webpack-shell-plugin/index.d.ts"],"unresolvedImports":["babel-register","copy-webpack-plugin","dotenv-defaults","dotenv-webpack","inherits","schema-utils","webpack-log","webpack-shell-plugin"],"kind":"action::set"}
+[23:40:44.491] Response has been sent.
+[23:40:44.491] Sending response:
+    {"kind":"event::endInstallTypes","eventId":1,"projectName":"/dev/null/inferredProject1*","packagesToInstall":["@types/copy-webpack-plugin@ts3.9","@types/dotenv-defaults@ts3.9","@types/dotenv-webpack@ts3.9","@types/inherits@ts3.9","@types/webpack-shell-plugin@ts3.9"],"installSuccess":true,"typingsInstallerVersion":"3.9.5"}
+[23:40:44.492] Response has been sent.
+[23:40:47.465] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/lib.d.ts","/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/lib.es5.d.ts","/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/lib.dom.d.ts","/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/lib.scripthost.d.ts","/home/phil/.cache/typescript/3.9/node_modules/@types/copy-webpack-plugin/index.d.ts","/home/phil/.cache/typescript/3.9/node_modules/@types/webpack-shell-plugin/index.d.ts","/home/phil/.cache/typescript/3.9/node_modules/@types/dotenv-webpack/index.d.ts","/home/phil/code/phaserCordovaClock/webpack/base.js","/home/phil/.cache/typescript/3.9/node_modules/@types/dotenv-defaults/index.d.ts","/home/phil/.cache/typescript/3.9/node_modules/@types/inherits/index.d.ts"],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/phil/code/phaserCordovaClock/webpack","kind":"discover"}
+[23:40:47.466] Explicitly included types: []
+[23:40:47.468] Inferred typings from unresolved imports: []
+[23:40:47.469] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/phil/code/phaserCordovaClock/webpack/bower_components","/home/phil/code/phaserCordovaClock/webpack/node_modules"]}
+[23:40:47.469] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/phil/code/phaserCordovaClock/webpack/bower_components","/home/phil/code/phaserCordovaClock/webpack/node_modules"]}
+[23:40:47.469] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[23:40:47.469] Response has been sent.
+[23:40:47.469] No new typings were requested as a result of typings discovery
+[23:40:48.829] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/lib.d.ts","/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/lib.es5.d.ts","/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/lib.dom.d.ts","/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/lib.scripthost.d.ts","/home/phil/code/phaserCordovaClock/webpack/base.js"],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/phil/code/phaserCordovaClock/webpack","kind":"discover"}
+[23:40:48.830] Explicitly included types: []
+[23:40:48.830] Inferred typings from unresolved imports: []
+[23:40:48.830] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/phil/code/phaserCordovaClock/webpack/bower_components","/home/phil/code/phaserCordovaClock/webpack/node_modules"]}
+[23:40:48.830] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/phil/code/phaserCordovaClock/webpack/bower_components","/home/phil/code/phaserCordovaClock/webpack/node_modules"]}
+[23:40:48.831] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[23:40:48.831] Response has been sent.
+[23:40:48.831] No new typings were requested as a result of typings discovery
+[23:51:6.912] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":[],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/phil/code/phaserCordovaClock/webpack","kind":"discover"}
+[23:51:6.912] Explicitly included types: []
+[23:51:6.913] Inferred typings from unresolved imports: []
+[23:51:6.913] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/phil/code/phaserCordovaClock/webpack/bower_components","/home/phil/code/phaserCordovaClock/webpack/node_modules"]}
+[23:51:6.914] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/phil/code/phaserCordovaClock/webpack/bower_components","/home/phil/code/phaserCordovaClock/webpack/node_modules"]}
+[23:51:6.914] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[23:51:6.914] Response has been sent.
+[23:51:6.914] No new typings were requested as a result of typings discovery

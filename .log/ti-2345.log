@@ -1,0 +1,24 @@
+[8:32:9.404] Global cache location '/home/phil/.cache/typescript/3.9', safe file path '/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/typingSafeList.json', types map path /home/phil/code/phaserCordovaClock/node_modules/typescript/lib/typesMap.json
+[8:32:9.407] Processing cache location '/home/phil/.cache/typescript/3.9'
+[8:32:9.407] Trying to find '/home/phil/.cache/typescript/3.9/package.json'...
+[8:32:9.415] Loaded content of '/home/phil/.cache/typescript/3.9/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.505"},"devDependencies":{"@types/copy-webpack-plugin":"^6.0.0","@types/dotenv-defaults":"^2.0.0","@types/dotenv-webpack":"^1.8.0","@types/inherits":"0.0.30","@types/webpack-shell-plugin":"^0.5.0"}}
+[8:32:9.415] Loaded content of '/home/phil/.cache/typescript/3.9/package-lock.json'
+[8:32:9.459] Adding entry into typings cache: 'copy-webpack-plugin' => '/home/phil/.cache/typescript/3.9/node_modules/@types/copy-webpack-plugin/index.d.ts'
+[8:32:9.467] Adding entry into typings cache: 'dotenv-defaults' => '/home/phil/.cache/typescript/3.9/node_modules/@types/dotenv-defaults/index.d.ts'
+[8:32:9.474] Adding entry into typings cache: 'dotenv-webpack' => '/home/phil/.cache/typescript/3.9/node_modules/@types/dotenv-webpack/index.d.ts'
+[8:32:9.480] Adding entry into typings cache: 'inherits' => '/home/phil/.cache/typescript/3.9/node_modules/@types/inherits/index.d.ts'
+[8:32:9.487] Adding entry into typings cache: 'webpack-shell-plugin' => '/home/phil/.cache/typescript/3.9/node_modules/@types/webpack-shell-plugin/index.d.ts'
+[8:32:9.487] Finished processing cache location '/home/phil/.cache/typescript/3.9'
+[8:32:9.488] Process id: 2352
+[8:32:9.488] NPM location: /usr/local/bin/npm (explicit '--npmLocation' not  provided)
+[8:32:9.488] validateDefaultNpmLocation: false
+[8:32:9.489] Npm config file: /home/phil/.cache/typescript/3.9/package.json
+[8:32:9.489] Updating types-registry npm package...
+[8:32:9.489] Exec: /usr/local/bin/npm install --ignore-scripts types-registry@latest
+[8:32:13.964]     Succeeded. stdout:
+    + types-registry@0.1.505
+    updated 1 package and audited 16 packages in 1.706s
+found 0 vulnerabilities
+
+
+[8:32:13.964] Updated types-registry npm package

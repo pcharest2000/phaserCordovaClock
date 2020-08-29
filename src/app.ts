@@ -1,7 +1,7 @@
 import * as Phaser from "phaser";
 import BootScene from "@/scenes/BootScene";
-import PreloadScene from "@/scenes/PreloadScene";
-import TitleScene from "@/scenes/TitleScene";
+//import PreloadScene from "@/scenes/PreloadScene";
+//import TitleScene from "@/scenes/TitleScene";
 import ClockFadeScene  from "@/scenes/clockFadeScene";
 export default class App extends Phaser.Game {
   public static start(): App {
@@ -30,8 +30,8 @@ export default class App extends Phaser.Game {
     super(config);
     this.scene.add("ClockFadeScene", ClockFadeScene);
     this.scene.add("BootScene", BootScene);
-    this.scene.add("PreloadScene", PreloadScene);
-    this.scene.add("TitleScene", TitleScene);
+    //this.scene.add("PreloadScene", PreloadScene);
+    //this.scene.add("TitleScene", TitleScene);
     this.scene.start("BootScene");
   }
 }

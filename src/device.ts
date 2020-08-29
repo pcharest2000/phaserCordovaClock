@@ -3,7 +3,7 @@ import i18next from "i18next";
 import AdBanner from "@/utils/AdBanner";
 import AdInterstitial from "@/utils/AdInterstitial";
 import Tracking from "@/utils/Tracking";
-
+import {PowerManagement} from "../plugins/talisman-cordova-plugin-powermanagement/www/powermanagement"
 function showExitAppDialog(): void {
   navigator.notification.confirm(
     i18next.t("close_dialog_message"),
@@ -63,7 +63,7 @@ function setup(): Promise<void> {
 
     document.addEventListener(
       "backbutton",
-      function (e) {
+      function(e) {
         e.preventDefault();
         showExitAppDialog();
       },
@@ -71,6 +71,8 @@ function setup(): Promise<void> {
     );
 
     window.screen.orientation.lock('landscape');
+
+
     navigator.splashscreen.hide();
     resolve();
   });
@@ -91,8 +93,10 @@ const Device = {
             })
             .finally(() => {
               logger.log("[Device] ready");
-              StatusBar.hide();
-// Hide system UI until user interacts
+              StatusBar.hide()
+              PowerManagement.acquire();
+              //window.powerManagement.acquire();
+
               resolve();
             });
         });

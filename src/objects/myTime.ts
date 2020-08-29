@@ -1,8 +1,6 @@
 export default class MyTime {
     private lastTime: Date;
     private currentTime: Date;
-    private lastHour: number;
-    private lastMinute: number;
     private currentHour: number;
     private currentMinute: number;
 
@@ -18,9 +16,8 @@ export default class MyTime {
         this.lastTime = new Date();
         this.currentTime = this.lastTime;
         this.currentHour = this.currentTime.getHours();
-        this.lastHour = this.currentHour;
+
         this.currentMinute = this.currentTime.getMinutes();
-        this.lastMinute = this.currentMinute;
 
         this.currentMinuteDigit = Math.floor((this.currentMinute / 1) % 10);
         this.currentMinuteTenth = Math.floor((this.currentMinute / 10) % 10);
@@ -34,7 +31,7 @@ export default class MyTime {
 
     }
     public timeChanged(): boolean {
-        var newTime = new Date();
+        let newTime = new Date();
         if (this.currentMinute != newTime.getMinutes()) {
             this.currentMinute = newTime.getMinutes();
             this.currentHour = newTime.getHours();

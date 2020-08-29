@@ -62,7 +62,9 @@
       "cordova-plugin-statusbar": {},
       "cordova-plugin-wkwebview-engine": {},
       "cordova-plugin-screen-orientation": {},
-      "cordova-plugin-fullscreen": {}
+      "cordova-plugin-fullscreen": {},
+      "cordova-plugin-powermanagement": {},
+      "talisman-cordova-plugin-powermanagement": {}
     },
     "platforms": [
       "ios",
@@ -71,6 +73,7 @@
     ]
   },
   "devDependencies": {
+    "@red-mobile/cordova-plugin-powermanagement": "^2.0.0",
     "@types/jest": "^25.2.3",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
@@ -96,6 +99,7 @@
     "raw-loader": "^4.0.1",
     "shelljs": "^0.8.4",
     "stdout": "0.0.3",
+    "talisman-cordova-plugin-powermanagement": "^1.0.0",
     "terser-webpack-plugin": "^3.0.2",
     "ts-jest": "^25.5.1",
     "ts-loader": "^7.0.5",
