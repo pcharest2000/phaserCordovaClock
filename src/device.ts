@@ -94,7 +94,7 @@ const Device = {
             .finally(() => {
               logger.log("[Device] ready");
               StatusBar.hide()
-              PowerManagement.acquire();
+   //           PowerManagement.acquire();
               //window.powerManagement.acquire();
 
               resolve();

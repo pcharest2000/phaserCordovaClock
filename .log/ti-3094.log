@@ -1,0 +1,36 @@
+[11:21:29.471] Global cache location '/home/phil/.cache/typescript/3.9', safe file path '/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/typingSafeList.json', types map path /home/phil/code/phaserCordovaClock/node_modules/typescript/lib/typesMap.json
+[11:21:29.473] Processing cache location '/home/phil/.cache/typescript/3.9'
+[11:21:29.473] Trying to find '/home/phil/.cache/typescript/3.9/package.json'...
+[11:21:29.477] Loaded content of '/home/phil/.cache/typescript/3.9/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.505"},"devDependencies":{"@types/copy-webpack-plugin":"^6.0.0","@types/dotenv-defaults":"^2.0.0","@types/dotenv-webpack":"^1.8.0","@types/inherits":"0.0.30","@types/webpack-shell-plugin":"^0.5.0"}}
+[11:21:29.478] Loaded content of '/home/phil/.cache/typescript/3.9/package-lock.json'
+[11:21:29.511] Adding entry into typings cache: 'copy-webpack-plugin' => '/home/phil/.cache/typescript/3.9/node_modules/@types/copy-webpack-plugin/index.d.ts'
+[11:21:29.519] Adding entry into typings cache: 'dotenv-defaults' => '/home/phil/.cache/typescript/3.9/node_modules/@types/dotenv-defaults/index.d.ts'
+[11:21:29.528] Adding entry into typings cache: 'dotenv-webpack' => '/home/phil/.cache/typescript/3.9/node_modules/@types/dotenv-webpack/index.d.ts'
+[11:21:29.535] Adding entry into typings cache: 'inherits' => '/home/phil/.cache/typescript/3.9/node_modules/@types/inherits/index.d.ts'
+[11:21:29.542] Adding entry into typings cache: 'webpack-shell-plugin' => '/home/phil/.cache/typescript/3.9/node_modules/@types/webpack-shell-plugin/index.d.ts'
+[11:21:29.542] Finished processing cache location '/home/phil/.cache/typescript/3.9'
+[11:21:29.543] Process id: 3128
+[11:21:29.543] NPM location: /usr/local/bin/npm (explicit '--npmLocation' not  provided)
+[11:21:29.543] validateDefaultNpmLocation: false
+[11:21:29.543] Npm config file: /home/phil/.cache/typescript/3.9/package.json
+[11:21:29.543] Updating types-registry npm package...
+[11:21:29.544] Exec: /usr/local/bin/npm install --ignore-scripts types-registry@latest
+[11:21:33.313]     Succeeded. stdout:
+    + types-registry@0.1.505
+    updated 1 package and audited 16 packages in 1.873s
+found 0 vulnerabilities
+
+
+[11:21:33.313] Updated types-registry npm package
+[12:30:18.906] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":[],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/phil/code/phaserCordovaClock/src/objects","kind":"discover"}
+[12:30:19.43] Loaded safelist from types map file '/home/phil/code/phaserCordovaClock/node_modules/typescript/lib/typesMap.json'
+[12:30:19.43] Explicitly included types: []
+[12:30:19.47] Inferred typings from unresolved imports: []
+[12:30:19.47] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/phil/code/phaserCordovaClock/src/objects/bower_components","/home/phil/code/phaserCordovaClock/src/objects/node_modules"]}
+[12:30:19.47] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/phil/code/phaserCordovaClock/src/objects/bower_components","/home/phil/code/phaserCordovaClock/src/objects/node_modules"]}
+[12:30:19.48] DirectoryWatcher:: Added:: WatchInfo: /home/phil/code/phaserCordovaClock/src/objects/bower_components
+[12:30:19.53] DirectoryWatcher:: Added:: WatchInfo: /home/phil/code/phaserCordovaClock/src/objects/node_modules
+[12:30:19.55] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[12:30:19.56] Response has been sent.
+[12:30:19.56] No new typings were requested as a result of typings discovery
