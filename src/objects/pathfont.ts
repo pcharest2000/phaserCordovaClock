@@ -295,45 +295,38 @@ export class FontPath {
                 this.path[9][1].quadraticBezierTo(140, 994, 106, 976);
                 this.path[9][1].quadraticBezierTo(265, 1012, 175, 1012);
                 this.generatePoints();
-                this.generateSplines();
+                //this.generateSplines();
         };
-
         private generatePoints(): void {
-
                 let pathLengths: number[][];
                 let totalLengths: number[];
-                let numPointsPerPath: number [][];
-                const TotalPoints:number=64;
+                let numPointsPerPath: number[][];
+                const TotalPoints: number = 64;
                 this.points = [];
                 pathLengths = [];
                 totalLengths = [];
-                numPointsPerPath=[];
+                numPointsPerPath = [];
                 for (var i = 0; i < this.path.length; i++) {
                         pathLengths[i] = []
                         for (var j = 0; j < this.path[i].length; j++) {
                                 pathLengths[i][j] = this.path[i][j].getLength();
                         }
                 }
-
                 for (var i = 0; i < pathLengths.length; i++) {
-                        totalLengths[i]=0;
+                        totalLengths[i] = 0;
                         for (var j = 0; j < this.path[i].length; j++) {
-                                totalLengths[i]+=pathLengths[i][j];
+                                totalLengths[i] += pathLengths[i][j];
                         }
                 }
-
                 for (var i = 0; i < pathLengths.length; i++) {
-                        numPointsPerPath[i]=[];
+                        numPointsPerPath[i] = [];
                         this.points[i] = [];
                         for (var j = 0; j < this.path[i].length; j++) {
-                                numPointsPerPath[i][j]=Math.round(  TotalPoints*pathLengths[i][j]/totalLengths[i]);
-                                this.points[i][j] = this.path[i][j].getSpacedPoints(numPointsPerPath[i][j]);
+                                numPointsPerPath[i][j] = Math.round(TotalPoints * pathLengths[i][j] / totalLengths[i]);
+                                this.points[i][j] = this.path[i][j].getSpacedPoints(numPointsPerPath[i][j]-1);
                         }
                 }
-
-
         }
-
         private generateSplines(): void {
                 this.splines = [];
                 for (var i = 0; i < this.points.length; i++) {
