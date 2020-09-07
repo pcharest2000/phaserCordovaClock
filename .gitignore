@@ -1,6 +1,12 @@
 #never commit node_modules
 node_modules
 
+
+
+hooks/
+__mocks__
+webpack
+
 #never commit packed files
 www/assets
 www/locales
@@ -9,7 +15,8 @@ src/assets.ts
 
 .vscode/
 typings/
-
+#logs
+*.log
 # Mac
 .DS_Store
 

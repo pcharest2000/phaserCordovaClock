@@ -42,7 +42,7 @@ export default class MophClockScene extends Phaser.Scene {
       loop: true
     })
 
-    this.reshapeMorphPointsiArray(0, 1);
+    this.reshapeMorphPointsiArray(8, 9);
     this.tweenMorphSrc();
   }
   public drawSourcePoints() {

@@ -1,11 +1,11 @@
-Info 0    [1:10:24.74] Starting TS Server
-Info 1    [1:10:24.81] Version: 3.9.5
-Info 2    [1:10:24.81] Arguments: /usr/local/bin/node /home/phil/code/phaserCordovaClock/node_modules/.bin/tsserver --logFile /home/phil/code/phaserCordovaClock/.log/tsserver.log --logVerbosity info --cancellationPipeName /tmp/dfb298544dc34abf256c0ab3cabfc532/tscancellation*
-Info 3    [1:10:24.81] Platform: linux NodeVersion: 12 CaseSensitive: true
-Info 4    [1:10:24.158] Search path: /home/phil/code/phaserCordovaClock/src/scenes
-Info 5    [1:10:24.184] For info: /home/phil/code/phaserCordovaClock/src/scenes/morphClockScene.ts :: Config file name: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 6    [1:10:24.184] Opened configuration file /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 7    [1:10:25.575] Config: /home/phil/code/phaserCordovaClock/tsconfig.json : {
+Info 0    [10:6:37.897] Starting TS Server
+Info 1    [10:6:37.900] Version: 3.9.5
+Info 2    [10:6:37.900] Arguments: /usr/local/bin/node /home/phil/code/phaserCordovaClock/node_modules/.bin/tsserver --logFile /home/phil/code/phaserCordovaClock/.log/tsserver.log --logVerbosity info --cancellationPipeName /tmp/dcd4263467e11545f3225cb198249d6e/tscancellation*
+Info 3    [10:6:37.901] Platform: linux NodeVersion: 12 CaseSensitive: true
+Info 4    [10:6:37.946] Search path: /home/phil/code/phaserCordovaClock/src/scenes
+Info 5    [10:6:37.950] For info: /home/phil/code/phaserCordovaClock/src/scenes/morphClockScene.ts :: Config file name: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 6    [10:6:37.950] Opened configuration file /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 7    [10:6:38.554] Config: /home/phil/code/phaserCordovaClock/tsconfig.json : {
  "rootNames": [
   "/home/phil/code/phaserCordovaClock/node_modules/cordova-plugin-dialogs/types/index.d.ts",
   "/home/phil/code/phaserCordovaClock/node_modules/cordova-plugin-globalization/types/index.d.ts",
@@ -86,78 +86,25 @@ Info 7    [1:10:25.575] Config: /home/phil/code/phaserCordovaClock/tsconfig.json
   "configFilePath": "/home/phil/code/phaserCordovaClock/tsconfig.json"
  }
 }
-Info 8    [1:10:30.712] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 9    [1:10:43.162] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 1 structureChanged: true Elapsed: 12449ms
-Info 10   [1:10:43.162] Project '/home/phil/code/phaserCordovaClock/tsconfig.json' (Configured)
-Info 11   [1:10:43.162] 	Files (135)
+Info 8    [10:6:40.348] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
+Info 9    [10:6:50.630] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 1 structureChanged: true Elapsed: 10282ms
+Info 10   [10:6:50.630] Project '/home/phil/code/phaserCordovaClock/tsconfig.json' (Configured)
+Info 11   [10:6:50.631] 	Files (135)
 
-Info 12   [1:10:43.163] -----------------------------------------------
-Info 13   [1:10:43.537] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 14   [1:10:43.620] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 2 structureChanged: false Elapsed: 81ms
-Info 15   [1:10:43.620] Different program with same set of files:: oldProgram.structureIsReused:: 2
-Info 16   [1:10:43.629] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 17   [1:10:43.689] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 3 structureChanged: false Elapsed: 60ms
-Info 18   [1:10:43.689] Different program with same set of files:: oldProgram.structureIsReused:: 2
-Info 19   [1:11:2.532] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 20   [1:11:2.590] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 4 structureChanged: false Elapsed: 58ms
-Info 21   [1:11:2.590] Different program with same set of files:: oldProgram.structureIsReused:: 2
-Info 22   [1:11:3.835] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 23   [1:11:3.902] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 5 structureChanged: false Elapsed: 67ms
-Info 24   [1:11:3.902] Different program with same set of files:: oldProgram.structureIsReused:: 2
-Info 25   [1:11:20.823] FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src/assets.ts 1:: WatchInfo: /home/phil/code/phaserCordovaClock/src/assets.ts 500 undefined Project:  WatchType: Closed Script info
-Info 26   [1:11:20.824] Elapsed:: 1ms FileWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src/assets.ts 1:: WatchInfo: /home/phil/code/phaserCordovaClock/src/assets.ts 500 undefined Project:  WatchType: Closed Script info
-Info 27   [1:11:20.887] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src :: WatchInfo: /home/phil/code/phaserCordovaClock/src 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Wild card directory
-Info 28   [1:11:20.888] Elapsed:: 1ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src :: WatchInfo: /home/phil/code/phaserCordovaClock/src 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Wild card directory
-Info 29   [1:11:20.888] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src :: WatchInfo: /home/phil/code/phaserCordovaClock/src 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
-Info 30   [1:11:20.904] Elapsed:: 16ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/src :: WatchInfo: /home/phil/code/phaserCordovaClock/src 1 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
-Info 31   [1:11:21.714] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 32   [1:11:22.443] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 6 structureChanged: true Elapsed: 729ms
-Info 33   [1:11:22.443] Different program with same set of files:: oldProgram.structureIsReused:: 1
-Info 34   [1:11:23.404] Before ensureProjectForOpenFiles:
-Info 35   [1:11:23.404] After ensureProjectForOpenFiles:
-Info 36   [1:11:23.404] got projects updated in background, updating diagnostics for /home/phil/code/phaserCordovaClock/src/scenes/morphClockScene.ts
-Info 37   [1:13:1.324] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 38   [1:13:1.395] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 7 structureChanged: false Elapsed: 71ms
-Info 39   [1:13:1.395] Different program with same set of files:: oldProgram.structureIsReused:: 2
-Info 40   [1:13:3.605] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 41   [1:13:3.649] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 8 structureChanged: false Elapsed: 44ms
-Info 42   [1:13:3.649] Different program with same set of files:: oldProgram.structureIsReused:: 2
-Info 43   [1:13:16.367] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 44   [1:13:16.410] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 9 structureChanged: false Elapsed: 43ms
-Info 45   [1:13:16.410] Different program with same set of files:: oldProgram.structureIsReused:: 2
-Info 46   [1:13:17.587] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 47   [1:13:17.625] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 10 structureChanged: false Elapsed: 37ms
-Info 48   [1:13:17.625] Different program with same set of files:: oldProgram.structureIsReused:: 2
-Info 49   [1:14:51.226] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 50   [1:14:51.260] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 11 structureChanged: false Elapsed: 34ms
-Info 51   [1:14:51.260] Different program with same set of files:: oldProgram.structureIsReused:: 2
-Info 52   [1:14:52.621] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 53   [1:14:52.660] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 12 structureChanged: false Elapsed: 39ms
-Info 54   [1:14:52.661] Different program with same set of files:: oldProgram.structureIsReused:: 2
-Info 55   [1:14:55.876] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 56   [1:14:55.913] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 13 structureChanged: false Elapsed: 37ms
-Info 57   [1:14:55.913] Different program with same set of files:: oldProgram.structureIsReused:: 2
-Info 58   [1:14:57.744] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 59   [1:14:57.779] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 14 structureChanged: false Elapsed: 35ms
-Info 60   [1:14:57.779] Different program with same set of files:: oldProgram.structureIsReused:: 2
-Info 61   [1:15:21.554] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 62   [1:15:21.589] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 15 structureChanged: false Elapsed: 35ms
-Info 63   [1:15:21.589] Different program with same set of files:: oldProgram.structureIsReused:: 2
-Info 64   [1:15:25.640] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 65   [1:15:25.736] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 16 structureChanged: false Elapsed: 96ms
-Info 66   [1:15:25.736] Different program with same set of files:: oldProgram.structureIsReused:: 2
-Info 67   [1:15:28.454] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 68   [1:15:28.496] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 17 structureChanged: false Elapsed: 42ms
-Info 69   [1:15:28.496] Different program with same set of files:: oldProgram.structureIsReused:: 2
-Info 70   [1:15:32.22] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 71   [1:15:32.62] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 18 structureChanged: false Elapsed: 40ms
-Info 72   [1:15:32.63] Different program with same set of files:: oldProgram.structureIsReused:: 2
-Info 73   [1:17:5.674] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 74   [1:17:5.720] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 19 structureChanged: false Elapsed: 46ms
-Info 75   [1:17:5.720] Different program with same set of files:: oldProgram.structureIsReused:: 2
-Info 76   [1:19:32.814] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 77   [1:19:32.882] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 20 structureChanged: false Elapsed: 68ms
-Info 78   [1:19:32.882] Different program with same set of files:: oldProgram.structureIsReused:: 2
-Info 79   [1:19:34.808] Starting updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json
-Info 80   [1:19:34.875] Finishing updateGraphWorker: Project: /home/phil/code/phaserCordovaClock/tsconfig.json Version: 21 structureChanged: false Elapsed: 67ms
-Info 81   [1:19:34.875] Different program with same set of files:: oldProgram.structureIsReused:: 2
+Info 12   [10:6:50.631] -----------------------------------------------
+Info 13   [10:10:39.513] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/4913 :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 14   [10:10:39.516] Elapsed:: 2ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/4913 :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 15   [10:10:39.516] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/4913 :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 16   [10:10:39.516] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/4913 :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 17   [10:10:39.517] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/.gitignore :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 18   [10:10:39.517] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/.gitignore :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 19   [10:10:39.517] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/.gitignore :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 20   [10:10:39.517] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/.gitignore :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 21   [10:14:30.19] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/4913 :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 22   [10:14:30.20] Elapsed:: 1ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/4913 :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 23   [10:14:30.20] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/4913 :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 24   [10:14:30.21] Elapsed:: 1ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/4913 :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 25   [10:14:30.21] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/.gitignore :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 26   [10:14:30.21] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/.gitignore :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 27   [10:14:30.21] DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/.gitignore :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
+Info 28   [10:14:30.21] Elapsed:: 0ms DirectoryWatcher:: Triggered with /home/phil/code/phaserCordovaClock/.gitignore :: WatchInfo: /home/phil/code/phaserCordovaClock 0 undefined Project: /home/phil/code/phaserCordovaClock/tsconfig.json WatchType: Failed Lookup Locations
