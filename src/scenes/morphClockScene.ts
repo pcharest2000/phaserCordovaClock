@@ -8,149 +8,235 @@ const sceneConfig: Phaser.Types.Scenes.SettingsConfig = {
 };
 
 
-
 export default class MophClockScene extends Phaser.Scene {
   private myTime: MyTime;
-  private graphics: Phaser.GameObjects.Graphics;
-  private fontPath: FontPath;
   private myTimer: Phaser.Time.TimerEvent;
   private count: number;
-  private pointMorphSrc: Phaser.Math.Vector2[][];
-  private pointMorphDst: Phaser.Math.Vector2[][];
+
+  private srcPathHourTenth: FontPath;
+  private dstPathHourTenth: FontPath;
+  private srcPathHourDigit: FontPath;
+  private dstPathHourDigit: FontPath;
+  private srcPathMinutesTenth: FontPath;
+  private dstPathMinutesTenth: FontPath;
+  private srcPathMinutesDigit: FontPath;
+  private dstPathMinutesDigit: FontPath;
+
   constructor() {
     super({ key: "MorphClockScene" });
     this.count = 0;
   }
   public myEvent() {
-
-    //    this.drawDigitPath(this.count);
-    //    this.transitionDropRain();
+    let tmp = this.count;
     this.count++;
     if (this.count > 9) {
       this.count = 0;
     }
+    // this.srcPathHourDigit = new FontPath(this, tmp, 500, 0)
+    // this.dstPathHourDigit = new FontPath(this, this.count, 500, 0)
+    // this.tweenMorphSrc2(this.srcPathHourDigit, this.dstPathHourDigit);
+    //this.tweenMorphSrc(tmp, this.count, 130, 30);
+    // this.tweenMorphSrc(tmp, this.count, 0, 90);
   }
   public create() {
-    this.fontPath = new FontPath();
-    //this.graphics = new Phaser.GameObjects.Graphics(this);
-    this.graphics = this.add.graphics();
     this.myTime = new MyTime();
+    this.srcPathHourTenth = new FontPath(this, this.myTime.currentHourTenth, 0, 0,0.25)
+    this.dstPathHourTenth = new FontPath(this, this.myTime.currentHourTenth, 0, 0,0.25)
+    this.srcPathHourDigit = new FontPath(this, this.myTime.currentHourDigit, 1 * FontPath.maxWidth, 0,0.25)
+    this.dstPathHourDigit = new FontPath(this, this.myTime.currentHourDigit, 1 * FontPath.maxWidth, 0,0.25)
+    this.srcPathMinutesTenth = new FontPath(this, this.myTime.currentMinuteTenth, 2 * FontPath.maxWidth, 0,0.25)
+    this.dstPathMinutesTenth = new FontPath(this, this.myTime.currentMinuteTenth, 2 * FontPath.maxWidth, 0,0.25)
+    this.srcPathMinutesDigit = new FontPath(this, this.myTime.currentMinuteDigit, 3 * FontPath.maxWidth, 0,0.25)
+    this.dstPathMinutesDigit = new FontPath(this, this.myTime.currentMinuteDigit, 3 * FontPath.maxWidth, 0,0.25)
     this.myTimer = this.time.addEvent({
-      delay: 10000,
+      delay: 5000,
       callbackScope: this,
       callback: this.myEvent,
       loop: true
     })
-
-    this.reshapeMorphPointsiArray(8, 9);
-    this.tweenMorphSrc();
+    console.log(FontPath.maxWidth);
   }
-  public drawSourcePoints() {
-    let splines: Phaser.Curves.Spline[] = [];
-
-    this.graphics.lineStyle(6, 0xff0000, 1);
-    for (let i = 0; i < this.pointMorphSrc.length; i++) {
-      splines.push(new Phaser.Curves.Spline(this.pointMorphSrc[i]))
-    }
-    for (let i = 0; i < this.pointMorphSrc.length; i++) {
-      splines[i].draw(this.graphics, 128);
-    }
-  }
-  public drawDigitPath2(digit: number) {
-    let spline = new Phaser.Curves.Spline(this.fontPath.points[digit][0])
-    this.graphics.lineStyle(2, 0xff0000, 1);
-    this.graphics.fillStyle(0xff00ff);   // color: 0xRRGGBB
-    spline.draw(this.graphics, 256);
-
-  }
-  public tweenMorph(digit1: number, digit2: number) {
-    for (let j = 0; j < this.fontPath.points[digit1].length; j++) {
-      for (let i = 0; i < this.fontPath.points[digit1][j].length; i++) {
-        this.add.tween({
-          targets: this.fontPath.points[digit1][j][i],
-          x: this.fontPath.points[digit2][j][i].x,
-          y: this.fontPath.points[digit2][j][i].y,
-          // x: { start: this.fontPath.points[1][0][i].x, to: this.fontPath.points[1][0][i].x + Phaser.Math.Between(-50, 50) },
-          // y: { start: this.fontPath.points[1][0][i].y, to: this.fontPath.points[1][0][i].y + Phaser.Math.Between(-50, 50) },
-          repeat: -1,
-          duration: 3000,//Phaser.Math.Between(2000, 4000),
-          delay: 0,
-          yoyo: true,
-          ease: 'linear'
-        })
+  public tweenMorphSrc(srcDigit: number, dstDigit: number, x: number, y: number) {
+    this.srcPathHourTenth = new FontPath(this, srcDigit, x, y,0.25);
+    this.dstPathHourTenth = new FontPath(this, dstDigit, x, y,0.25);
+    if (this.srcPathHourTenth.numPath < this.dstPathHourTenth.numPath) {
+      for (let i = 0; i < this.srcPathHourTenth.numPath; i++) {
+        for (let j = 0; j < this.srcPathHourTenth.points[i].length; j++) {
+          this.add.tween({
+            targets: this.srcPathHourTenth.points[i][j],
+            x: this.dstPathHourTenth.points[i][j].x,
+            y: this.dstPathHourTenth.points[i][j].y,
+            repeat: 0,
+            duration: 1200,//Phaser.Math.Between(2000, 4000),
+            yoyo: false,
+            ease: 'linear',
+            delay: 0
+          })
+        }
       }
-    }
-  }
-  public tweenMorphSrc() {
-    for (let i = 0; i < this.pointMorphSrc.length; i++) {
-      for (let j = 0; j < this.pointMorphSrc[i].length; j++) {
-        this.add.tween({
-          targets: this.pointMorphSrc[i][j],
-          x: this.pointMorphDst[i][j].x,
-          y: this.pointMorphDst[i][j].y,
-          repeat: -1,
-          duration: 3000,//Phaser.Math.Between(2000, 4000),
-          yoyo: true,
-          ease: 'linear',
-          hold: 3000,
-          delay: 3000
-        })
+      for (let i = this.srcPathHourTenth.numPath; i < this.dstPathHourTenth.numPath; i++) {
+        this.srcPathHourTenth.numPath = this.dstPathHourTenth.numPath;
+        this.srcPathHourTenth.points[i] = this.dstPathHourTenth.points[i];
+        this.srcPathHourTenth.pointsCenters[i] = this.dstPathHourTenth.pointsCenters[i];
+        for (let j = 0; j < this.dstPathHourTenth.points[i].length; j++) {
+          this.add.tween({
+            targets: this.srcPathHourTenth.points[i][j],
+            x: { start: this.srcPathHourTenth.pointsCenters[i].x, to: this.srcPathHourTenth.points[i][j].x },
+            y: { start: this.srcPathHourTenth.pointsCenters[i].y, to: this.srcPathHourTenth.points[i][j].y },
+            repeat: 0,
+            duration: 1200,//Phaser.Math.Between(2000, 4000),
+            yoyo: false,
+            ease: 'linear',
+            delay: 0
+          })
+        }
       }
-    }
-  }
-  public reshapeMorphPointsiArray(source: number, dest: number) {
-    let srcDim = this.fontPath.points[source].length;
-    let dstDim = this.fontPath.points[dest].length;
-
-    if (srcDim == 1 && dstDim == 1) {
-      this.pointMorphSrc = [...this.fontPath.points[source]]
-      this.pointMorphDst = [...this.fontPath.points[dest]]
       return;
     }
-    let srcDimLength: number[] = [];
-    let dstDimLength: number[] = [];
-    for (var i = 0; i < srcDim; i++)
-      srcDimLength.push(this.fontPath.points[source][i].length)
-
-    for (var i = 0; i < dstDim; i++)
-      dstDimLength.push(this.fontPath.points[dest][i].length)
-    console.log("sourceDim " + srcDim);
-    console.log(srcDimLength);
-    console.log("destDim " + dstDim)
-    console.log(dstDimLength);
-
-
-    this.pointMorphSrc = [];
-    this.pointMorphDst = [];
-
-    let morphIndexi = 0;
-    let morphIndexj = 0;
-    let lengthIndex = 0;
-    // Here we copy the src data into the reshape morphArray
-    //we must reshape the src to dst shape
-    if (srcDim > dstDim) {
-      this.pointMorphSrc = [...this.fontPath.points[source]]
-      for (var j = 0; j < srcDimLength.length; j++) {
-        this.pointMorphDst[j] = []
-        for (var i = 0; i < srcDimLength[j]; i++) {
-          this.pointMorphDst[j][i] = new Phaser.Math.Vector2();
-          this.pointMorphDst[j][i].x = this.fontPath.points[dest][morphIndexj][morphIndexi].x;
-          this.pointMorphDst[j][i].y = this.fontPath.points[dest][morphIndexj][morphIndexi].y;
-          morphIndexi++;
-          if (morphIndexi >= dstDimLength[lengthIndex]) {
-            morphIndexi = 0;
-            morphIndexj++;
-            lengthIndex++;
-          }
+    if (this.srcPathHourTenth.numPath > this.dstPathHourTenth.numPath) {
+      for (let i = 0; i < this.dstPathHourTenth.numPath; i++) {
+        for (let j = 0; j < this.srcPathHourTenth.points[i].length; j++) {
+          this.add.tween({
+            targets: this.srcPathHourTenth.points[i][j],
+            x: this.dstPathHourTenth.points[i][j].x,
+            y: this.dstPathHourTenth.points[i][j].y,
+            repeat: 0,
+            duration: 1200,//Phaser.Math.Between(2000, 4000),
+            yoyo: false,
+            ease: 'linear',
+            delay: 0
+          })
+        }
+      }
+      for (let i = this.dstPathHourTenth.numPath; i < this.srcPathHourTenth.numPath; i++) {
+        for (let j = 0; j < this.srcPathHourTenth.points[i].length; j++) {
+          this.add.tween({
+            targets: this.srcPathHourTenth.points[i][j],
+            x: this.srcPathHourTenth.pointsCenters[i].x,
+            y: this.srcPathHourTenth.pointsCenters[i].y,
+            repeat: 0,
+            duration: 1200,//Phaser.Math.Between(2000, 4000),
+            yoyo: false,
+            ease: 'linear',
+            delay: 0
+          })
+        }
+      }
+      return;
+    }
+    if (this.srcPathHourTenth.numPath == this.dstPathHourTenth.numPath) {
+      for (let i = 0; i < this.srcPathHourTenth.numPath; i++) {
+        for (let j = 0; j < this.srcPathHourTenth.points[i].length; j++) {
+          this.add.tween({
+            targets: this.srcPathHourTenth.points[i][j],
+            x: this.dstPathHourTenth.points[i][j].x,
+            y: this.dstPathHourTenth.points[i][j].y,
+            repeat: 0,
+            duration: 1200,//Phaser.Math.Between(2000, 4000),
+            yoyo: false,
+            ease: 'linear',
+            delay: 0
+          })
         }
       }
     }
+    return;
+  }
 
+  public tweenMorphSrc2(srcPath: FontPath, dstPath: FontPath) {
+    if (srcPath.numPath < dstPath.numPath) {
+      for (let i = 0; i < srcPath.numPath; i++) {
+        for (let j = 0; j < srcPath.points[i].length; j++) {
+          this.add.tween({
+            targets: srcPath.points[i][j],
+            x: dstPath.points[i][j].x,
+            y: dstPath.points[i][j].y,
+            repeat: 0,
+            duration: 1200,//Phaser.Math.Between(2000, 4000),
+            yoyo: false,
+            ease: 'linear',
+            delay: 0
+          })
+        }
+      }
+      for (let i = srcPath.numPath; i < dstPath.numPath; i++) {
+        srcPath.numPath = dstPath.numPath;
+        srcPath.points[i] = dstPath.points[i];
+        srcPath.pointsCenters[i] = dstPath.pointsCenters[i];
+        for (let j = 0; j < dstPath.points[i].length; j++) {
+          this.add.tween({
+            targets: srcPath.points[i][j],
+            x: { start: srcPath.pointsCenters[i].x, to: srcPath.points[i][j].x },
+            y: { start: srcPath.pointsCenters[i].y, to: srcPath.points[i][j].y },
+            repeat: 0,
+            duration: 1200,//Phaser.Math.Between(2000, 4000),
+            yoyo: false,
+            ease: 'linear',
+            delay: 0
+          })
+        }
+      }
+      return;
+    }
+    if (srcPath.numPath > dstPath.numPath) {
+      for (let i = 0; i < dstPath.numPath; i++) {
+        for (let j = 0; j < srcPath.points[i].length; j++) {
+          this.add.tween({
+            targets: srcPath.points[i][j],
+            x: dstPath.points[i][j].x,
+            y: dstPath.points[i][j].y,
+            repeat: 0,
+            duration: 1200,//Phaser.Math.Between(2000, 4000),
+            yoyo: false,
+            ease: 'linear',
+            delay: 0
+          })
+        }
+      }
+      for (let i = dstPath.numPath; i < srcPath.numPath; i++) {
+        for (let j = 0; j < srcPath.points[i].length; j++) {
+          this.add.tween({
+            targets: srcPath.points[i][j],
+            x: srcPath.pointsCenters[i].x,
+            y: srcPath.pointsCenters[i].y,
+            repeat: 0,
+            duration: 1200,//Phaser.Math.Between(2000, 4000),
+            yoyo: false,
+            ease: 'linear',
+            delay: 0
+          })
+        }
+      }
+      return;
+    }
+    if (srcPath.numPath == dstPath.numPath) {
+      for (let i = 0; i < srcPath.numPath; i++) {
+        for (let j = 0; j < srcPath.points[i].length; j++) {
+          this.add.tween({
+            targets: srcPath.points[i][j],
+            x: dstPath.points[i][j].x,
+            y: dstPath.points[i][j].y,
+            repeat: 0,
+            duration: 1200,//Phaser.Math.Between(2000, 4000),
+            yoyo: false,
+            ease: 'linear',
+            delay: 0
+          })
+        }
+      }
+    }
+    return;
+  }
+
+  public draw() {
+    FontPath.graphics.clear()
+
+    this.srcPathHourTenth.draw();
+    this.srcPathHourDigit.draw();
+    this.srcPathMinutesTenth.draw();
+    this.srcPathMinutesDigit.draw();
   }
   public update(time, delta) {
-    this.graphics.clear()
-
-    //    this.drawDigitPath2(3);
-    this.drawSourcePoints();
+    this.draw();
   }
 }

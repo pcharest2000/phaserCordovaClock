@@ -6,7 +6,7 @@ node_modules
 hooks/
 __mocks__
 webpack
-
+.github/workflows
 #never commit packed files
 www/assets
 www/locales

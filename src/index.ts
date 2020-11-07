@@ -1,6 +1,6 @@
-import i18next from "i18next";
-import i18nXHRBackend from "i18next-xhr-backend";
-import i18nBrowserLanguageDetector from "i18next-browser-languagedetector";
+// import i18next from "i18next";
+// import i18nXHRBackend from "i18next-xhr-backend";
+// import i18nBrowserLanguageDetector from "i18next-browser-languagedetector";
 import * as WebFontLoader from "webfontloader";
 import * as Assets from "@/assets";
 import App from "@/app";
@@ -35,27 +35,27 @@ async function loadWebFont(): Promise<void> {
     webFontLoaderOptions.active = (): void => {
       resolve();
     };
-    console.log(webFontLoaderOptions);
+    //console.log(webFontLoaderOptions);
     WebFontLoader.load(webFontLoaderOptions);
   });
 }
 
-async function loadLocales(): Promise<unknown> {
-  return i18next
-    .use(i18nBrowserLanguageDetector)
-    .use(i18nXHRBackend)
-    .init({
-      fallbackLng: "en",
-      backend: {
-        loadPath: "locales/{{lng}}/{{ns}}.json",
-      },
-      debug: DEBUG,
-    });
-}
+// async function loadLocales(): Promise<unknown> {
+//   return i18next
+//     .use(i18nBrowserLanguageDetector)
+//     .use(i18nXHRBackend)
+//     .init({
+//       fallbackLng: "en",
+//       backend: {
+//         loadPath: "locales/{{lng}}/{{ns}}.json",
+//       },
+//       debug: DEBUG,
+//     });
+// }
 
 window.onload = async (): Promise<void> => {
   await Device.init();
-  await loadLocales();
+//  await loadLocales();
   await loadWebFont();
  // await screen.lockOrientation('landscape');
   App.start();

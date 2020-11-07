@@ -1,4 +1,4 @@
-import * as PixelUI from "@/pixelui";
+//import * as PixelUI from "@/pixelui";
 import * as Assets from "@/assets";
 export default class BootScene extends Phaser.Scene {
   public init(): void {
@@ -10,16 +10,15 @@ export default class BootScene extends Phaser.Scene {
   }
 
   public create(): void {
-    PixelUI.theme.update({
-      themeDark: false,
-      textShadow: true,
-      textStroke: true,
-      textFontFamily: Assets.CustomWebFonts.FontsKiniroSs.getFamily(),
-      textSizeSmall: 30,
-      textSizeNormal: 34,
-      textSizeLarge: 46,
-    });
-    console.log("In Boot Scene");
+    // PixelUI.theme.update({
+    //   themeDark: false,
+    //   textShadow: true,
+    //   textStroke: true,
+    //   textFontFamily: Assets.CustomWebFonts.FontsKiniroSs.getFamily(),
+    //   textSizeSmall: 30,
+    //   textSizeNormal: 34,
+    //   textSizeLarge: 46,
+    // });
     //this.scene.start("ClockFadeScene");
     this.scene.start("MorphClockScene");
   }
