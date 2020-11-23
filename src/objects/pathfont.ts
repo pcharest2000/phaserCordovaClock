@@ -11,6 +11,9 @@ export class FontPath {
         static scene: Phaser.Scene;
         static graphics: Phaser.GameObjects.Graphics
         static maxWidth: number;
+        static maxHeight: number;
+        public scaledWidthPixels: number;
+        public scaledHeightPixels: number;
         public scale: number; //Scale as fraction of screen width
         public points: Phaser.Math.Vector2[][];
         public digit: number;
@@ -313,21 +316,19 @@ export class FontPath {
                         FontPath.path[9][1].quadraticBezierTo(265, 1012, 175, 1012);
 
                         FontPath.maxWidth = 600;
+                        FontPath.maxHeight = 1000;
+
+
                 }
                 this.scale = scaleFrac * FontPath.scene.sys.canvas.width / FontPath.maxWidth;
+
+
+                this.scaledWidthPixels = FontPath.maxWidth * this.scale;
+                this.scaledHeightPixels = FontPath.maxHeight * this.scale;
+
                 this.generatePoints();
         };
-        // public scale(numDigitOnscreen: number): void {
-        //         var screenWidth = FontPath.scene.sys.canvas.width;
-        //         var scale = screenWidth/(FontPath.maxWidth*numDigitOnscreen )
-        //         console.log(scale);
-        //         for (let i = 0; i < this.points.length; i++) {
-        //                 for (let j = 0; j < this.points[i].length; j++) {
-        //                         this.points[i][j].x = this.points[i][j].x * scale;
-        //                         this.points[i][j].y = this.points[i][j].y * scale;
-        //                 }
-        //         }
-        // }
+
         private generatePoints(): void {
                 const TotalPoints: number = 64;
                 this.points = [];
@@ -349,7 +350,6 @@ export class FontPath {
 
         private normalizeY() {
                 let minY: number = 20000;
-
                 for (let i = 0; i < this.points.length; i++) {
                         for (let j = 0; j < this.points[i].length; j++) {
                                 if (this.points[i][j].y < minY)
@@ -362,6 +362,7 @@ export class FontPath {
                         }
                 }
         }
+
         private getCenter() {
                 let minX: number;
                 let maxX: number;
@@ -396,8 +397,5 @@ export class FontPath {
                 for (let i = 0; i < splines.length; i++) {
                         splines[i].draw(FontPath.graphics, 128);
                 }
-                // for (let i = 0; i < this.pointsCenters.length; i++) {
-                //         FontPath.graphics.fillCircle(this.pointsCenters[i].x, this.pointsCenters[i].y, 5);
-                // }
         }
 };
